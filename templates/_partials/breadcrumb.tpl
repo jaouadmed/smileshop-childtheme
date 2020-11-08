@@ -21,7 +21,7 @@
 * @copyright 2007-2019 PrestaShop SA
 * @license https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
 * International Registered Trademark & Property of PrestaShop SA
-* }
+*}
 {strip}
 <nav data-depth="{$breadcrumb.count}" class="breadcrumb">
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -129,7 +129,6 @@
         </li>       
         {/if}
         {/block}
-
+{/strip}
     </ol>
 </nav>
-{/strip}
