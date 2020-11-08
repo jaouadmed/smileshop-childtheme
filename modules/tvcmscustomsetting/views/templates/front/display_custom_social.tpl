@@ -78,7 +78,7 @@
 
 	              <div class="tvblock-social-content tvtwitter-wrapper">
 
-	            <a href="#" target="_blank">
+	            <a href="{Configuration::get('BLOCKSOCIAL_TWITTER')}" target="_blank">
 
 	                <div class="tvblock-social-icon tvtwitter"></div>
 
@@ -94,7 +94,7 @@
 
 	              <div class="tvblock-social-content tvrss-wrapper">
 
-	            <a href="#" target="_blank">
+	            <a href="{Configuration::get('BLOCKSOCIAL_RSS')}" target="_blank">
 
 	                <div class="tvblock-social-icon tvrss"></div>
 
@@ -110,7 +110,7 @@
 
 	              <div class="tvblock-social-content tvyoutube-wrapper">
 
-	            <a href="#" target="_blank">
+	            <a href="{Configuration::get('BLOCKSOCIAL_YOUTUBE')}" target="_blank">
 
 	                <div class="tvblock-social-icon tvyoutube"></div>
 
@@ -126,7 +126,7 @@
 
 	              <div class="tvblock-social-content tvgoogleplus-wrapper">
 
-	            <a href="#" target="_blank">
+	            <a href="{Configuration::get('BLOCKSOCIAL_GOOGLE_PLUS')}" target="_blank">
 
 	                <div class="tvblock-social-icon tvgoogleplus"></div>
 
@@ -142,7 +142,7 @@
 
 	              <div class="tvblock-social-content tvpinterest-wrapper">
 
-	            <a href="#" target="_blank">
+	            <a href="{Configuration::get('BLOCKSOCIAL_PINTEREST')}" target="_blank">
 
 	                <div class="tvblock-social-icon tvpinterest"></div>
 
@@ -158,7 +158,7 @@
 
 	              <div class="tvblock-social-content tvvimeo-wrapper">
 
-	            <a href="#" target="_blank">
+	            <a href="{Configuration::get('BLOCKSOCIAL_VIMEO')}" target="_blank">
 
 	                <div class="tvblock-social-icon tvvimeo"></div>
 
@@ -174,7 +174,7 @@
 
 	              <div class="tvblock-social-content tvinstagram-wrapper">
 
-	            <a href="{Configuration::get('BLOCKSOCIAL_FACEBOOK')}" target="_blank">
+	            <a href="{Configuration::get('BLOCKSOCIAL_INSTAGRAM')}" target="_blank">
 
 	                <div class="tvblock-social-icon tvinstagram"></div>
 
