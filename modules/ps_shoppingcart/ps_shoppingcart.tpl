@@ -118,12 +118,12 @@
                         </div>
                     </div>
                     <div class="ttvcart-product-list-btn-wrapper">
-                        <button class="ttvcart-product-list-viewcart">
+                        <button class="btn ttvcart-product-list-viewcart">
                             <a href="{$cart_url}">
                                 {l s='View Cart' d='Shop.Theme.Actions'}
                             </a>
                         </button>
-                        <button class="ttvcart-product-list-checkout">
+                        <button class="btn ttvcart-product-list-checkout">
                             <a href="{$link->getPageLink('order', null, $language.id)}">
                                 {l s='CheckOut' d='Shop.Theme.Actions'}
                             </a>
