@@ -156,14 +156,15 @@
                             <span class="ttvshoping-cart-label">{l s='Shipping' d='Shop.Theme.Checkout'}</span>
                             <span class="ttvcart-product-value">{$cart.subtotals.shipping.value}</span>
                         </div>*}
-                        <div class="ttvcart-product-label-value total">
-                            <span class="ttvshoping-cart-label">{$cart.totals.total.label} {$cart.labels.tax_short}</span>
-                            <span class="ttvcart-product-value">{$cart.totals.total.value}</span>
-                        </div>
                         <div class="ttvcart-product-label-value tax">
                             <span class="ttvshoping-cart-label">{$cart.subtotals.tax.label}</span>
                             <span class="ttvcart-product-value">{$cart.subtotals.tax.value}</span>
                         </div>
+                        <div class="ttvcart-product-label-value total">
+                            <span class="ttvshoping-cart-label">{$cart.totals.total.label} {$cart.labels.tax_short}</span>
+                            <span class="ttvcart-product-value">{$cart.totals.total.value}</span>
+                        </div>
+                        
                     </div>
                     
                     {else}
