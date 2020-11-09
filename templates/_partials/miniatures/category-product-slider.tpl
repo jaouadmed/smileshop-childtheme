@@ -22,7 +22,7 @@
     * @license https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
     * International Registered Trademark & Property of PrestaShop SA
     *}
-    {extends file='_partials/miniatures/category-product-slider.tpl'}
+    {extends file='parent:_partials/miniatures/category-product-slider.tpl'}
 
     {strip}
     {block name='product_miniature_item'}
