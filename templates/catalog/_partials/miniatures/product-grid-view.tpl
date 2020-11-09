@@ -15,7 +15,7 @@
             
     {if $flag.type == 'new'}
         <li class="product-flag {$flag.type}">
-            <i class='material-icons'>fiber_new</i>
+            <i class='material-icons' style="font-size: 24px; color: red;">fiber_new</i>
         </li>
     {/if}
 
