@@ -28,7 +28,7 @@
 
     {if $flag.type == 'on-sale'}
         <li class="product-flag {$flag.type}">
-            -{$product.discount_percentage_absolute}%
+            -{$product.regular_price / $product.price}%
         </li>
     {/if}
     
