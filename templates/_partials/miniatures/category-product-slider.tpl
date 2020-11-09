@@ -26,7 +26,7 @@
 
     {strip}
     {block name='product_miniature_item'}
-    <article class="item product-miniature js-product-miniature tvall-product-wrapper-info-box" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
+    <article class="item abc product-miniature js-product-miniature tvall-product-wrapper-info-box" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
         <div class="thumbnail-container">
             <div class="tvproduct-wrapper grid">
                 {block name='product_thumbnail'}
