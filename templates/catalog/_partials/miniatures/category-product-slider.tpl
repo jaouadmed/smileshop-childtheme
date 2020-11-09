@@ -1,4 +1,4 @@
-{extends file='parent:_partials/miniatures/category-product-slider.tpl'}
+{extends file='parent:catalog/_partials/miniatures/category-product-slider.tpl'}
 
 {block name='product_flags'}
 

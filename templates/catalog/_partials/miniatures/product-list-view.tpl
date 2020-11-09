@@ -1,4 +1,4 @@
-{extends file='parent:_partials/miniatures/product-list-view.tpl'}
+{extends file='parent:catalog/_partials/miniatures/product-list-view.tpl'}
 
 {block name='product_flags'}
 
