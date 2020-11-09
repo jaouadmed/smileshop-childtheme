@@ -48,9 +48,15 @@
                     {block name='product_flags'}
                     <ul class="tvproduct-flags tvproduct-online-new-wrapper">
                         {foreach from=$product.flags item=flag}
-                        {if $flag.type == 'online-only' || $flag.type == 'new'}
-                        <li class="product-flag {$flag.type}">{$flag.label}</li>
+                        
+                        {if $flag.type == 'online-only'}
+                            <i class='material-icons'>&#xe3c2;</i>
                         {/if}
+                        
+                        {if $flag.type == 'new'}
+                            <i class='material-icons'>&#xe3c2;</i>
+                        {/if}
+                        
                         {/foreach}
                     </ul>
                     <ul class="tvproduct-flags tvproduct-sale-pack-wrapper">
@@ -64,7 +70,7 @@
                         
                         {if $flag.type == 'pack'}
                             <li class="product-flag {$flag.type}">
-                                <i class='C'>&#xe3c2;</i>
+                                <i class='material-icons'>&#xe3c2;</i>
                             </li>
                         {/if}
                         
