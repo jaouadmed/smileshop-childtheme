@@ -28,7 +28,7 @@
 
     {if $flag.type == 'on-sale'}
         <li class="product-flag {$flag.type}">
-            {$product.price}
+            {$product.discount_to_display}
         </li>
     {/if}
     
