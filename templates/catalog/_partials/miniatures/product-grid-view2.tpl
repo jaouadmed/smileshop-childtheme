@@ -28,7 +28,7 @@
 
     {if $flag.type == 'on-sale'}
         <li class="product-flag {$flag.type}">
-            -{$product.regular_price / $product.price}%
+            {$product.price}
         </li>
     {/if}
     
