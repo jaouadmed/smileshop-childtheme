@@ -11,7 +11,7 @@
         <li class="product-flag {$flag.type}">
             <i style="font-size: 30px;" id="tvverticalmenu">
                 <div stye="background: rgb(228 0 70); border-radius: 3px;font-size:.5em; font-family: 'Roboto Condensed', sans-serif;line-height: 1.3em;padding:0 4px;">
-                    {$flag.tag}
+                    {$flag.label}
                 </div>
             </i>
         </li>
@@ -21,7 +21,7 @@
         <li class="product-flag {$flag.type}">
             <i style="font-size: 30px;" id="tvverticalmenu">
                 <div stye="background: rgb(228 0 70); border-radius: 3px;font-size:.5em; font-family: 'Roboto Condensed', sans-serif;line-height: 1.3em;padding:0 4px;">
-                    {$flag.tag}
+                    {$flag.label}
                 </div>
             </i>
         </li>
@@ -49,7 +49,7 @@
         <li class="product-flag {$flag.type}">
             <i style="font-size: 30px;">
                 <div stye="background: rgb(84 210 76); border-radius: 3px;font-size:.5em; font-family: 'Roboto Condensed', sans-serif;color: #fff;line-height: 1.3em;padding:0 4px;">
-                    {$flag.tag}
+                    {$flag.label}
                 </div>
             </i>
         </li>
