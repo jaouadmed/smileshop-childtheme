@@ -15,7 +15,7 @@
             
     {if $flag.type == 'new'}
         <li class="product-flag {$flag.type}">
-            <i class='material-icons' style="font-size: 36px; color: red;">fiber_new</i>
+            <i class='material-icons' style="font-size: 30px; color: red;">fiber_new</i>
         </li>
     {/if}
 
@@ -28,8 +28,8 @@
     {foreach from=$product.flags item=flag}
 
     {if $flag.type == 'on-sale'}
-        <li class="product-flag {$flag.type}">
-            -{$product.discount_to_display}
+        <li class="product-flag {$flag.type}" >
+            <div class="tvmenu-subtitle" style="font-size: 30px; color: yellow;">-{$product.discount_to_display}</div>
         </li>
     {/if}
     
