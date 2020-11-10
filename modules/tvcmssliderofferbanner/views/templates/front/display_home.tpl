@@ -48,7 +48,8 @@
 
 {strip}
 <style>
-  @media screen and (max-width: 600px) {.cacher {display: none;}}
+    .cacher {display: block;}
+    @media screen and (max-width: 600px) {.cacher {display: none;}}
 </style>
 <div class="tvcmssliderofferbanners-one col-md-2 col-lg-2 cacher" >
 
