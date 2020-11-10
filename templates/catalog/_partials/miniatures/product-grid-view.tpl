@@ -15,7 +15,7 @@
             
     {if $flag.type == 'new'}
         <li class="product-flag {$flag.type}">
-            <i class='material-icons' style="font-size: 24px; color: red;">fiber_new</i>
+            <i class='material-icons' style="font-size: 36px; color: red;">fiber_new</i>
         </li>
     {/if}
 
@@ -29,7 +29,7 @@
 
     {if $flag.type == 'on-sale'}
         <li class="product-flag {$flag.type}">
-            {$product.discount_to_display}
+            -{$product.discount_to_display}
         </li>
     {/if}
     
