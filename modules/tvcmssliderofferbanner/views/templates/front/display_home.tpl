@@ -48,7 +48,7 @@
 
 {strip}
 
-<div class="tvcmssliderofferbanners-one col-md-2 col-lg-2 d-sm-none d-md-block">
+<div class="tvcmssliderofferbanners-one col-md-2 col-lg-2 this" style="@media screen and (max-width: 600px) {.this {display: none;}}">
 
         	<div class="col-xl-12 col-lg-12 col-md-6 col-sm-6 tvbanner1 tvcmssliderofferbanners">
 
