@@ -250,8 +250,9 @@ $(document).ready(function() {
     /********************* Start Mobile View js *****************************************/
     function showView() {
         if (document.body.clientWidth <= mobileViewSize) { //for mobile view
+            $("#tvcmsdesktop-logo .logo").attr("style", "object-fit: none; object-position: 0 0; width: 52px; height: 53px;")
             moveDataInMobileView('#tvcmsdesktop-logo', '#tvcmsmobile-header-logo');
-            $(".logo .img-responsive").attr("style", "object-fit: none; object-position: 0 0; width: 52px; height: 53px;")
+            
             moveDataInMobileView('#_desktop_cart', '#tvmobile-cart');
             moveDataInMobileView('#tvcmsdesktop-account-button', '#tvcmsmobile-account-button');
             moveDataInMobileView('#tvdesktop-megamenu', '#tvmobile-megamenu');
@@ -260,8 +261,8 @@ $(document).ready(function() {
             // moveDataInMobileView('.tvsearch-header-display-wrappper', '#tvcmsmobile-vertical-menu');
             //console.log('moveDataInMobileView');
         } else { //for desktop view
+            $("#tvcmsdesktop-logo .logo").removeAttr("style");
             moveDataInDesktopView('#tvcmsdesktop-logo', '#tvcmsmobile-header-logo');
-            $(".logo .img-responsive").removeAttr("style");
             moveDataInDesktopView('#_desktop_cart', '#tvmobile-cart');
             moveDataInDesktopView('#tvcmsdesktop-account-button', '#tvcmsmobile-account-button');
             moveDataInDesktopView('#tvdesktop-megamenu', '#tvmobile-megamenu');
