@@ -28,7 +28,7 @@
 
     {if $flag.type == 'on-sale'}
         <li class="product-flag {$flag.type}" >
-            <div class="tvmenu-subtitle" style="font-size: 30px; color: yellow;">-{$product.discount_to_display}</div>
+            -{$product.discount_to_display}
         </li>
     {/if}
     
