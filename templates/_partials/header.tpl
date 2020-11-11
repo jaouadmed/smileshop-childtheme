@@ -23,7 +23,7 @@
     * International Registered Trademark & Property of PrestaShop SA
     *}
     
-    {extends file='_partials/header.tpl'}
+    {extends file='parent:_partials/header.tpl'}
 
     {strip}
     {block name='header_banner'}

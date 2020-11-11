@@ -46,7 +46,7 @@
 
  *}
 
-{extends file='_partials/mobile-header.tpl'}
+{extends file='parent:_partials/mobile-header.tpl'}
 
 
 {strip}
