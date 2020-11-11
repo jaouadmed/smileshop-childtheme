@@ -45,6 +45,7 @@
  * International Registered Trademark & Property of PrestaShop SA
 
  *}
+
 {extends file='parent:_partials/mobile-header.tpl'}
 
 {strip}
