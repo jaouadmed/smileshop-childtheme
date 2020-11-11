@@ -44,7 +44,7 @@
                 <div class="row tvcmsdesktop-top-header-box">
                     <div class='col-md-4 col-xl-4 col-sm-12 tvcms-header-logo-wrapper'>
                         <div class="hidden-sm-down tvcms-header-logo" id="tvcmsdesktop-logo">
-                            <div class="tv-header-logo">aaaaaaaaaa
+                            <div class="tv-header-logo">
                                 <a href="{$urls.base_url}">
                                     <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}" height="34" width="200">
                                 </a>
