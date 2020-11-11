@@ -116,5 +116,5 @@
     </div>
     {hook h='displayNavFullWidth'}
     {/block}
-    {include file='mobile-header.tpl'}
+    {include file='parent:_partials/mobile-header.tpl'}
     {/strip}
