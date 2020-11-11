@@ -23,7 +23,7 @@
     * International Registered Trademark & Property of PrestaShop SA
     *}
     
-    {extends file='parent:_partials/header.tpl'}
+    {extends file='_partials/header.tpl'}
 
     {strip}
     {block name='header_banner'}
@@ -201,7 +201,7 @@
 		<div id='tvcmsmobile-horizontal-menu-left'></div>
 
 	</div> --> *}
-    
+
     </div>
 
     {/strip}
