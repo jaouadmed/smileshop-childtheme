@@ -1,7 +1,7 @@
 
 function showView() {
     if (document.body.clientWidth <= mobileViewSize) { //for mobile view
-        $("#tvcmsdesktop-logo img.logo").attr("style", "object-fit: none; object-position: 0 0; width: 52px; height: 53px;");
+        $("#tvcmsdesktop-logo img.logo").attr("style", "object-fit: none; object-position: 0 0; width: 104px; height: 104px;");
         moveDataInMobileView('#tvcmsdesktop-logo', '#tvcmsmobile-header-logo');
         
         moveDataInMobileView('#_desktop_cart', '#tvmobile-cart');
