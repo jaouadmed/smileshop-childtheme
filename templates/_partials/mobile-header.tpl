@@ -45,6 +45,7 @@
  * International Registered Trademark & Property of PrestaShop SA
 
  *}
+{extends file='parent:_partials/mobile-header.tpl'}
 
 {strip}
 
@@ -104,9 +105,9 @@
 
 
 
-	<div class='tvcmsmobile-header-menu-offer-text col-sm-12  col-xs-2'>
+	<div class='tvcmsmobile-header-menu-offer-text col-sm-12'>
 
-		<div class="tvcmsmobile-header-menu col-sm-6">
+		<div class="tvcmsmobile-header-menu col-sm-6 col-xs-2">
 
 			<div id='tvmobile-megamenu'></div>
 
