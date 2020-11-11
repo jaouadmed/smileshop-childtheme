@@ -18,16 +18,17 @@
         <div class='container-fluid tvcmsdesktop-top-second hidden-md-down'>
             <div class="container">
                 <div class="row tvcmsdesktop-top-header-box">
-                    <div class='col-md-4 col-xl-4 col-sm-12 tvcms-header-logo-wrapper'>
+                    <div class='col-md-4 col-xl-4 col-sm-12 col-xs-2 tvcms-header-logo-wrapper'>
                         <div class="hidden-sm-down tvcms-header-logo" id="tvcmsdesktop-logo">
                             <div class="tv-header-logo">
                                 <a href="{$urls.base_url}">
                                     <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}" height="34" width="200">
+                                    <img class="logo img-responsive" style="display: none;" src="/img/logo-mobile.jpg" alt="{$shop.name}" height="34" width="34">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 col-md-6 col-xl-4 tvcmsheader-search">
+                    <div class="col-sm-12 col-lg-6 col-md-6 col-xl-4 col-xs-10 tvcmsheader-search">
                         <div class='tvcmssearch-wrapper' id="_desktop_search">
                             {hook h='displayNavSearchBlock'}
                         </div>
