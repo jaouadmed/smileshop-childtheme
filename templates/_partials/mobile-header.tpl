@@ -46,10 +46,10 @@
 
  *}
 
+{extends file='_partials/mobile-header.tpl'}
 
 
 {strip}
-{extends file='parent:_partials/mobile-header.tpl'}
 <div id='tvcms-mobile-view-header' class="hidden-lg-up">
 
 	{* <div id='tvcmsmobile-language-selector'></div>

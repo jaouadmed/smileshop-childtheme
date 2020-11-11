@@ -23,9 +23,9 @@
     * International Registered Trademark & Property of PrestaShop SA
     *}
     
+    {extends file='_partials/header.tpl'}
 
     {strip}
-    {extends file='parent:_partials/header.tpl'}
     {block name='header_banner'}
     <div class="tvcmsheader-banner">
         {hook h='displayBanner'}
