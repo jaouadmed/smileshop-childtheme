@@ -22,9 +22,10 @@
     * @license https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
     * International Registered Trademark & Property of PrestaShop SA
     *}
-    {extends file='parent:_partials/header.tpl'}
+    
 
     {strip}
+    {extends file='parent:_partials/header.tpl'}
     {block name='header_banner'}
     <div class="tvcmsheader-banner">
         {hook h='displayBanner'}
