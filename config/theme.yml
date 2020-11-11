@@ -4,7 +4,3 @@ display_name: My first child Theme
 version: 1.0.0
 assets:
   use_parent_assets: true
-  js:
-   all:
-     - id: custom-lib-script
-       path: assets/js/custom-lib.js
