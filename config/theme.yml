@@ -10,3 +10,4 @@ assets:
         path: assets/js/custom.js
         priority: 1000
         position: bottom
+        media: all
