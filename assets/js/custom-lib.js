@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).load(function() {
     var xsmall = 991;
     
     function showMobileLogo() {
