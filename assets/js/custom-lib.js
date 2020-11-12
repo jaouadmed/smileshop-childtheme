@@ -10,5 +10,8 @@ $(document).load(function() {
             if(mob.is(':visible')) mob.toggle();
         }
     });
+});
+
+$(document).ready(function() {
     $(window).trigger('resize');
 });
