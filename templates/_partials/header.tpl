@@ -87,3 +87,34 @@
 </div>
 {hook h='displayNavFullWidth'}
 {/block}
+
+{block name='include_mobile_header'}
+    <div id='tvcms-mobile-view-header' class="hidden-lg-up">
+
+	<div class="tvcmsmobile-top-wrapper">
+		<div class='tvmobileheader-offer-wrapper col-sm-12'>
+			{hook h='displayTopOfferText'}
+		</div>
+	</div>
+
+	<div class='tvcmsmobile-header-search-logo-wrapper'>
+		<div class="tvcmsmobile-header-logo-right-wrapper col-md-3 col-sm-12 col-xs-2">
+			<div id='tvcmsmobile-header-logo'></div>
+		</div>
+		<div class="tvcmsmobile-header-search col-md-9 col-sm-12 col-xs-10">
+			<div id="tvcmsmobile-search">{* {hook h='displayMobileSearchBlockXX'} *}</div>
+		</div>
+	</div>
+	<div class='tvcmsmobile-header-menu-offer-text col-xs-12'>
+		<div class="tvcmsmobile-header-menu col-sm-6 col-xs-2">
+			<div id='tvmobile-megamenu'></div>
+		</div>
+
+		<div class="col-sm-6 col-xs-10 tvcmsmobile-cart-acount-text">
+			<div id="tvcmsmobile-account-button"></div>
+			<div id="tvmobile-cart"></div>
+		</div>
+	</div>
+
+</div>
+{/block}
