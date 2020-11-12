@@ -1,6 +1,6 @@
-$(document).load(function() {
+$(document).ready(function() {
     var xsmall = 414;
-    $(window).resize(function() {
+    function showMobile() {
         var desk = $("img.logo.img-responsive:first-child"), mob = $("img.logo.img-responsive:last-child");
         if (document.body.clientWidth <= xsmall) { //for mobile view
             if(desk.is(':visible')) desk.toggle();
@@ -9,9 +9,9 @@ $(document).load(function() {
             if(!desk.is(':visible')) desk.toggle();
             if(mob.is(':visible')) mob.toggle();
         }
+    }
+    $(window).resize(function() {
+        showMobile();
     });
-});
-
-$(document).ready(function() {
-    $(window).trigger('resize');
+    showMobile();
 });
