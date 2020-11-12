@@ -98,7 +98,7 @@
 	</div>
 
 	<div class='tvcmsmobile-header-search-logo-wrapper'>
-		<div class="tvcmsmobile-header-logo-right-wrapper col-md-3 col-sm-12 col-xs-2" style="padding-right: 5px;
+		<div class="tvcmsmobile-header-logo-right-wrapper col-md-3 col-sm-12 col-xs-2" style="padding-right: 0px;
     padding-left: 5px;">
 			<div id='tvcmsmobile-header-logo'></div>
 		</div>

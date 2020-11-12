@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var xsmall = 414;
+    var xsmall = 575;
     function showMobile() {
         desk = $("img.logo.img-responsive:first-child"), mob = $("img.logo.img-responsive:last-child");
         if (document.body.clientWidth <= xsmall) { //for mobile view
