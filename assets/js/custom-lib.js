@@ -1,4 +1,4 @@
-$(document).load(function() {
+$(document).ready(function() {
     var xsmall = 414;
     if (document.body.clientWidth <= xsmall) { //for mobile view
         if(desk.is(':visible')) desk.toggle();
