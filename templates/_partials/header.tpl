@@ -98,10 +98,11 @@
 	</div>
 
 	<div class='tvcmsmobile-header-search-logo-wrapper'>
-		<div class="tvcmsmobile-header-logo-right-wrapper col-md-3 col-sm-12 col-xs-3">
+		<div class="tvcmsmobile-header-logo-right-wrapper col-md-3 col-sm-12 col-xs-2" style="padding-right: 5px;
+    padding-left: 5px;">
 			<div id='tvcmsmobile-header-logo'></div>
 		</div>
-		<div class="tvcmsmobile-header-search col-md-9 col-sm-12 col-xs-9">
+		<div class="tvcmsmobile-header-search col-md-9 col-sm-12 col-xs-10">
 			<div id="tvcmsmobile-search">{* {hook h='displayMobileSearchBlockXX'} *}</div>
 		</div>
 	</div>
