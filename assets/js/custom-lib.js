@@ -2,12 +2,13 @@ $(document).ready(function() {
     var xsmall = 991;
     
     function showMobileLogo() {
+        var desk = $("img.logo.img-responsive:first-child"), mob = $("img.logo.img-responsive:last-child");
         if (document.body.clientWidth <= xsmall) { //for mobile view
-            $("img.logo.img-responsive:first-child").toggle();
-            $("img.logo.img-responsive:last-child").toggle();
+            if(desk.is(':visible')) desk.toggle();
+            if(!mob.is(':visible')) mob.toggle();
         } else { //for desktop view
-            $("img.logo.img-responsive:first-child").toggle();
-            $("img.logo.img-responsive:last-child").toggle();
+            if(!desk.is(':visible')) desk.toggle();
+            if(mob.is(':visible')) mob.toggle();
         }
     }
 
