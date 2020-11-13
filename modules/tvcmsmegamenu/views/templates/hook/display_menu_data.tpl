@@ -153,18 +153,21 @@
                     {/if}
                 {/foreach}                
             </ul>
-            <div id="modal-backdrop-menu" style="background-color: rgba(0,0,0,0.3);
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 99;
-                -webkit-transition: all 0.1s ease-in-out;
-                transition: all 0.1s ease-in-out;
-                display:none;">
+            <div id="modal-backdrop-menu" style="display:none;">
             </div>
-            
+            <script>
+                $('.title-menu-mobile').on('click', function() {
+                    $('#modal-backdrop-menu').toggle();
+                });
+                
+                $('#modal-backdrop-menu').on('click', function() {
+                    if ($('.menu-content').hasClass('open')) {
+                        $('.menu-content').removeClass('open');
+                        $('.title-menu-mobile').removeClass('open');
+                    }
+                    $('#modal-backdrop-menu').toggle();
+                });
+            </script>
         </div>
     </div>
 {/strip}
