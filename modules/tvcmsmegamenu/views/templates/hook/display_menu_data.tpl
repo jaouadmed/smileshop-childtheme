@@ -161,7 +161,8 @@
                 bottom: 0;
                 z-index: 99;
                 -webkit-transition: all 0.1s ease-in-out;
-                transition: all 0.1s ease-in-out;"></div>
+                transition: all 0.1s ease-in-out;
+                display:none;"></div>
             </div>
     </div>
 {/strip}

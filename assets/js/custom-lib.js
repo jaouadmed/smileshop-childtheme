@@ -27,10 +27,10 @@ $(document).ready(function() {
     });
     
     $('.title-menu-mobile').on('click', function() {
-        $('body').addClass('classicCartOpen');
+        $('.modal-backdrop-menu').toggle();
     });
     
     $('.modal-backdrop-menu').on('click', function() {
-        $('body').removeClass('classicCartOpen');
+        $('.modal-backdrop-menu').toggle();
     });  
 });
