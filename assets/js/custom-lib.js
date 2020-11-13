@@ -15,16 +15,18 @@ $(document).ready(function() {
     });
     showMobile();
 
-    $('.title-menu-mobile').on('click', function() {
-        $('#modal-backdrop-menu').toggle();
-    });
     
-    $('#modal-backdrop-menu').on('click', function() {
-        if ($('.menu-content').hasClass('open')) {
-            $('.menu-content').removeClass('open');
-            $('.title-menu-mobile').removeClass('open');
-        }
-        $('#modal-backdrop-menu').toggle();
-    });
 
+});
+
+$('.title-menu-mobile').on('click', function() {
+    $('#modal-backdrop-menu').toggle();
+});
+
+$('#modal-backdrop-menu').on('click', function() {
+    if ($('.menu-content').hasClass('open')) {
+        $('.menu-content').removeClass('open');
+        $('.title-menu-mobile').removeClass('open');
+    }
+    $('#modal-backdrop-menu').toggle();
 });
