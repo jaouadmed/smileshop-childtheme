@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
     showMobile();
 
-    $('body').on('click, ', function() {
+    $('body').on('click', function() {
         if ($('.menu-content').hasClass('open')) {
             $('.menu-content').removeClass('open');
             $('.title-menu-mobile').removeClass('open');
