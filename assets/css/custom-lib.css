@@ -1,4 +1,4 @@
-body.classicMenuOpen .menu-content+.modal-backdrop-menu {
+.menu-content+.modal-backdrop-menu {
     background-color: rgba(0,0,0,0.3);
     position: fixed;
     top: 0;

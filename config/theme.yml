@@ -8,3 +8,7 @@ assets:
    all:
      - id: custom-lib-script
        path: assets/js/custom-lib.js
+  css:
+   all:
+     - id: custom-lib-css
+       path: assets/css/custom-lib.css
