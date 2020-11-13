@@ -25,9 +25,11 @@ $(document).ready(function() {
             $('body').removeClass('classicMenuOpen')
         }
     });
+    
     $('.title-menu-mobile').on('click', function() {
         $('body').addClass('classicCartOpen');
     });
+    
     $('.modal-backdrop-menu').on('click', function() {
         $('body').removeClass('classicCartOpen');
     });  
