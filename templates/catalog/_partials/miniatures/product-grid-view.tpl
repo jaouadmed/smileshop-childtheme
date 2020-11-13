@@ -21,7 +21,7 @@
         <li class="product-flag {$flag.type}">
             <i style="font-size: 30px;" id="tvverticalmenu">
                 <div style="background: rgb(228 0 70); border-radius: 0 10px 10px 0;font-size:.5em; font-family: 'Roboto Condensed', sans-serif;color: #fff;line-height: 1.3em;padding:0 4px;">
-                    {$flag.label}
+                    {$flag.label}✦
                 </div>
             </i>
         </li>
