@@ -153,7 +153,7 @@
                     {/if}
                 {/foreach}                
             </ul>
-            <div class="modal-backdrop-menu" style="background-color: rgba(0,0,0,0.3);
+            <div id="modal-backdrop-menu" style="background-color: rgba(0,0,0,0.3);
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -162,7 +162,8 @@
                 z-index: 99;
                 -webkit-transition: all 0.1s ease-in-out;
                 transition: all 0.1s ease-in-out;
-                display:none;"></div>
+                display:none;">
             </div>
+        </div>
     </div>
 {/strip}

@@ -17,15 +17,6 @@ $(document).ready(function() {
 
     
     //======================Mega Menu events=======================
-    
-    $('body').on('click', function() {
-        if ($('.menu-content').hasClass('open')) {
-            $('.menu-content').removeClass('open');
-            $('.title-menu-mobile').removeClass('open');
-            $('body').removeClass('classicMenuOpen')
-        }
-    });
-    
     $('.title-menu-mobile').on('click', function() {
         $('.modal-backdrop-menu').toggle();
     });
