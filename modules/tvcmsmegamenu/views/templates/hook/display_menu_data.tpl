@@ -32,7 +32,8 @@
             </div>
             <ul class="menu-content">
                 <li class="tvmega-menu-title">
-                    {l s='SmileShop Menu' mod='tvcmsmegamenu'}
+                    {*l s='SmileShop Menu' mod='tvcmsmegamenu'*}
+                    <img class="logo img-responsive" style="display: none;" src="{$shop.logo}" alt="{$shop.name}" height="34" width="200">
                     <a href="Javascript:void(0);"><i class='material-icons'>&#xe14c;</i></a>
                 </li>
                 {foreach from=$menus item=menu name=menus}
