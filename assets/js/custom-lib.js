@@ -16,7 +16,7 @@ $(document).ready(function() {
     showMobile();
 });
 
-$(document).load(function() {
+$(document).ready(function() {
 
     $('.title-menu-mobile').on('click', function() {
         $('#modal-backdrop-menu').toggle();
