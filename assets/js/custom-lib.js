@@ -13,8 +13,8 @@ $(document).ready(function() {
     $(window).resize(function() {
         showMobile();
     });
-    
-    //======================Mega Menu events=======================
+    showMobile();
+
     $('.title-menu-mobile').on('click', function() {
         $('#modal-backdrop-menu').toggle();
     });
@@ -27,5 +27,4 @@ $(document).ready(function() {
         $('#modal-backdrop-menu').toggle();
     });
 
-    showMobile();
 });
