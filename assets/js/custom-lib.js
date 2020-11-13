@@ -14,6 +14,9 @@ $(document).ready(function() {
         showMobile();
     });
     showMobile();
+});
+
+$(document).load(function() {
 
     $('.title-menu-mobile').on('click', function() {
         $('#modal-backdrop-menu').toggle();
@@ -27,4 +30,4 @@ $(document).ready(function() {
         $('#modal-backdrop-menu').toggle();
     });
 
-});
+}
