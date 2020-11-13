@@ -8,7 +8,9 @@ assets:
    all:
      - id: custom-lib-script
        path: assets/js/custom-lib.js
+       priority: 1
   css:
    all:
      - id: custom-lib-css
        path: assets/css/custom-lib.css
+       priority: 1
