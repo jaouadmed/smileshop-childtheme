@@ -135,7 +135,7 @@
                                             {foreach $dis_arr_result.data as $data}
 
                                                 <li class="tvtab-name tab-index {if $tmp}active{/if} col-xs-3" data-tab-data='{$data.tab_name_id}' data-tab-paging='{$data.tab_name_class_pagination}' data-tab-data-slider-class='{$data.tab_name_class_slider}'>
-                                                    <span>{$data.tab_name} style="font-size: 1em;"</span>
+                                                    <span style="font-size: 1em;">{$data.tab_name}</span>
                                                 </li>
 
                                                 {$tmp = false}
