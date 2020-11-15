@@ -41,7 +41,7 @@
                 <div style="background: rgb(84 210 76); border-radius: 10px 0 0 10px; font-size:.5em; font-family: 'Roboto Condensed', sans-serif;color: #fff;line-height: 1.3em;padding:0 4px;">
                     
                     -{$product.price }%
-                    -{ $product.regular_price}%
+                    -{$product.regular_price}%
 
                 </div>
             </i>
