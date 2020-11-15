@@ -40,7 +40,7 @@
             <i style="font-size: 30px;">
                 <div style="background: rgb(84 210 76); border-radius: 10px 0 0 10px; font-size:.5em; font-family: 'Roboto Condensed', sans-serif;color: #fff;line-height: 1.3em;padding:0 4px;">
                     {if $product.discount_type === 'percentage'}
-                        -{$product.discount_percentage}
+                        -{$product.discount_percentage_absolute}
                     {else}
                         -{$product.discount_to_display}
                     {/if}
