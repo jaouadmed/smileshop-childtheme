@@ -3,7 +3,7 @@
 
 {block name='product_flags'}
 
-<ul class="tvproduct-flags tvproduct-online-new-wrapper" style="left: 0px;right: auto;">
+<ul class="tvproduct-flags tvproduct-online-new-wrapper" style="left: 0px;right: auto;opacity: 1;">
 
     {foreach from=$product.flags item=flag}
 
@@ -31,7 +31,7 @@
 
 </ul>
 
-<ul class="tvproduct-flags tvproduct-sale-pack-wrapper" style="right: 0px;left: auto;">
+<ul class="tvproduct-flags tvproduct-sale-pack-wrapper" style="right: 0px;left: auto;opacity: 1;">
 
     {foreach from=$product.flags item=flag}
 
