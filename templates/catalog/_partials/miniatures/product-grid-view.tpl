@@ -44,7 +44,6 @@
                     {else}
                         -{$product.discount_to_display}
                     {/if}
-                    {$product.discount_percentage|round:0}%
                 </div>
             </i>
         </li>
