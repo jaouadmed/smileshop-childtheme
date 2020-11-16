@@ -111,7 +111,7 @@
 		</div>
 
         <div class="col-md-6 col-sm-6 col-xs-5" style="padding:0;">
-            {include file="modules/ps_socialfollow/ps_socialfollow.tpl"}
+            {*include file="modules/ps_socialfollow/ps_socialfollow.tpl"*}
         </div>
 
 		<div class="col-md-5 col-sm-6 col-xs-6 tvcmsmobile-cart-acount-text">
