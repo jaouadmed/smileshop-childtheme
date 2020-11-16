@@ -192,7 +192,7 @@ class TvcmsBlogArchiveModuleFrontController extends TvcmsBlogMainModuleFrontCont
         $pagination
             ->setPage($this->p)
             ->setPagesCount(
-                (int) ceil($this->nbProducts / $this->n)
+                (integer) ceil($this->nbProducts / $this->n)
             );
         $totalItems = $this->nbProducts;
         $itemsShownFrom = ($this->n * ($this->p - 1)) + 1;
