@@ -106,11 +106,15 @@
 		</div>
 	</div>
 	<div class='tvcmsmobile-header-menu-offer-text'>
-		<div class="tvcmsmobile-header-menu col-sm-6 col-xs-2">
+		<div class="tvcmsmobile-header-menu col-sm-2 col-xs-1">
 			<div id='tvmobile-megamenu'></div>
 		</div>
 
-		<div class="col-sm-6 col-xs-10 tvcmsmobile-cart-acount-text">
+        <div class="col-md-6 col-sm-6 col-xs-5" style="padding:0;">
+            {include file="modules/ps_socialfollow/ps_socialfollow.tpl"}
+        </div>
+
+		<div class="col-md-5 col-sm-6 col-xs-6 tvcmsmobile-cart-acount-text">
 			<div id="tvcmsmobile-account-button"></div>
 			<div id="tvmobile-cart"></div>
 		</div>
