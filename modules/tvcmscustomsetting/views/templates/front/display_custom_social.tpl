@@ -52,7 +52,7 @@
 
 {block name='block_social'}
 
-	<div class="block-social tv-footer-social-icon wow slideInLeft">
+	<div class="block-social tv-footer-social-icon wow slideInLeft" style="display: block;">
 
 	    <div class="tv-footer-social-icon-wrapper">
 
