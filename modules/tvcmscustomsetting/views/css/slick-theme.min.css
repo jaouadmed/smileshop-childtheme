@@ -162,6 +162,6 @@
 
 @media (min-width: 768px) {
     .slick-track {
-        display: flex;
+        display: inline;
     }
 }
