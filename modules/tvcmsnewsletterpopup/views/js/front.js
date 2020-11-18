@@ -41,8 +41,8 @@ $(document).ready(function () {
 				success: function(data) {
 					if (data) {
 						$(".tvcmsnewsletterpopupAlert").text(data);
-						$(".tvcmsnewsletterpopupnewsletter-input").toggle();
-						$(".tvnewsletter-email-subscribe").toggle();
+						$("#tvcmsnewsletterpopupnewsletter-input").toggle();
+						$("#tvnewsletter-email-subscribe").toggle();
 					}
 				}
 			});
@@ -61,8 +61,8 @@ $(document).ready(function () {
 					success: function(data) {
 						if (data) {
 							$(".tvcmsnewsletterpopupAlert").text(data);
-							$(".tvcmsnewsletterpopupnewsletter-input").toggle();
-							$(".tvnewsletter-email-subscribe").toggle();
+							$("#tvcmsnewsletterpopupnewsletter-input").toggle();
+							$("#tvnewsletter-email-subscribe").toggle();
 						}
 					}
 				});
