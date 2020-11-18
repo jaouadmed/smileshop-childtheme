@@ -128,14 +128,14 @@
 
                                     <div class="tvtab-title">
 
-                                        <ul class="tvtabs-products" style="display: flex;align-items: center;">
+                                        <ul class="tvtabs-products" style="display: inline-flex; align-items: center;">
 
                                             {$tmp = true}
 
                                             {foreach $dis_arr_result.data as $data}
 
                                                 <li class="tvtab-name tab-index {if $tmp}active{/if} col-xs-3" data-tab-data='{$data.tab_name_id}' data-tab-paging='{$data.tab_name_class_pagination}' data-tab-data-slider-class='{$data.tab_name_class_slider}'>
-                                                    <span style="font-size: 1em;">{$data.tab_name}</span>
+                                                    <span >{$data.tab_name}</span>
                                                 </li>
 
                                                 {$tmp = false}
