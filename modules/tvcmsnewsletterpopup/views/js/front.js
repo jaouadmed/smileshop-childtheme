@@ -27,7 +27,7 @@ $(document).ready(function () {
 	if ($.cookie("tvcmsnewsletterpopup") != "true") {
     	var obj = $(document).find('#tvnewsletter-email-subscribe');
 
-		setTimeout(function(){$("#tvcmsNewsLetterPopup").modal({show: true});}, 2000);
+		setTimeout(function(){$("#tvcmsNewsLetterPopup").modal({show: true});}, 10000);
 
 		$("#tvnewsletter-email-subscribe").click(function(event){
 			var email = $("#tvcmsnewsletterpopupnewsletter-input").val();
