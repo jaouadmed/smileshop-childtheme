@@ -26,10 +26,12 @@
 {$col = ''}
 
 
-{if !empty($offer_banner)}
+{*{if !empty($offer_banner)}
+    {$col = 'col-md-10 col-lg-10'}
+{/if}*}
+{if !isset($hook_mobile)}
     {$col = 'col-md-10 col-lg-10'}
 {/if}
-
 
 <div class="tvcms-slider-offerbanner-wrapper container-fluid">
     <div class="row">
@@ -85,6 +87,7 @@
             </div>
         </div>
         
+        {*$offer_banner nofilter*}
         {if isset($hook_mobile)}
             {$offer_banner nofilter}
         {/if}
