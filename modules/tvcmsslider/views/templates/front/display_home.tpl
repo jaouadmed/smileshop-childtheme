@@ -24,14 +24,12 @@
 *}
 {strip}
 {$col = ''}
-{$mobile_device = $this->context->getMobileDevice()}
 
-{*{if !empty($offer_banner)}
-    {$col = 'col-md-10 col-lg-10'}
-{/if}*}
-{if !$mobile_device}
+
+{if !empty($offer_banner)}
     {$col = 'col-md-10 col-lg-10'}
 {/if}
+
 
 <div class="tvcms-slider-offerbanner-wrapper container-fluid">
     <div class="row">
@@ -87,10 +85,8 @@
             </div>
         </div>
         
-        {*{$offer_banner nofilter}*}
-        {if !$mobile_device}
-            {$offer_banner nofilter}
-        {/if}
+        {$offer_banner nofilter}
+        
 
     </div>
 </div>
