@@ -35,7 +35,7 @@
 
 <div class="tvcms-slider-offerbanner-wrapper container-fluid">
     <div class="row">
-        <div class="{$col} tvcmsmain-slider-wrapper" data-speed='{$main_slider_js.speed}' data-pause-hover='{$main_slider_js.pause}'>
+        <div class="{$col} " data-speed='{$main_slider_js.speed}' data-pause-hover='{$main_slider_js.pause}'>
             <div class='tvcms-main-slider'>
                 <div class='tv-main-slider'>
                     <div id='tvmain-slider' class="owl-theme owl-carousel"> 
