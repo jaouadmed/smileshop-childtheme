@@ -28,7 +28,7 @@
     {foreach $linkBlocks as $linkBlock}{* 
     <div class="tvfooter-title">{$linkBlock.title}</div> 
     *}{assign var=_expand_id value=10|mt_rand:100000}
-      <div class="tvfooter-title-wrapper" data-target="#footer_sub_menu_link{_expand_id}" data-toggle="collapse">
+      <div class="tvfooter-title-wrapper" data-target="#footer_sub_menu_link{$_expand_id}" data-toggle="collapse">
         <span class="tvfooter-title">{$linkBlock.title}</span>
         <span class="float-xs-right tvfooter-toggle-icon-wrapper">
           <span class="navbar-toggler collapse-icons tvfooter-toggle-icon">
@@ -37,7 +37,7 @@
           </span>
         </span>
       </div>
-      <ul id="footer_sub_menu_link{_expand_id}" class="collapse tvfooter-link-wrapper">
+      <ul id="footer_sub_menu_link{$_expand_id}" class="collapse tvfooter-link-wrapper">
         {foreach $linkBlock.links as $link}
           <li>
             <a id="{$link.id}-{$linkBlock.id}" class="{$link.class}" href="{$link.url}" title="{$link.description}" {if !empty($link.target)} target="{$link.target}" {/if}
