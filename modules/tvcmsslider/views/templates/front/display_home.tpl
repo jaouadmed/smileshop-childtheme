@@ -85,8 +85,9 @@
             </div>
         </div>
         
-        {$offer_banner nofilter}
-        
+        {if isset($hook_mobile)}
+            {$offer_banner nofilter}
+        {/if}
 
     </div>
 </div>
