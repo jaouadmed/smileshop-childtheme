@@ -14,3 +14,6 @@ assets:
      - id: custom-lib-css
        path: assets/css/custom-lib.css
        priority: 1
+     - id: theme-custom
+       path: assets/css/custom.css
+       priority: 1
