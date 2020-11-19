@@ -15,10 +15,4 @@ $(document).ready(function() {
         showMobile();
     });
     showMobile();
-
-    $(document).on('mouseenter', '.tvblock-social-content', function(e) {
-        if (document.body.clientWidth <= xsmall) e.preventDefault();
-    });
-
-
 });
