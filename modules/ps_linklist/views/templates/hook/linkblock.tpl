@@ -37,7 +37,7 @@
           </span>
         </span>
       </div>
-      <ul id="footer_sub_menu_link{$_expand_id}" class="collapse tvfooter-link-wrapper" style="margin: 0;overflow: hidden;padding: 0 15px;">
+      <ul id="footer_sub_menu_link{$_expand_id}" class="collapse tvfooter-link-wrapper">
         {foreach $linkBlock.links as $link}
           <li>
             <a id="{$link.id}-{$linkBlock.id}" class="{$link.class}" href="{$link.url}" title="{$link.description}" {if !empty($link.target)} target="{$link.target}" {/if}
