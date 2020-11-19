@@ -27,10 +27,10 @@
 
 
 {*{if !empty($offer_banner)}
-    {$col = 'col-md-12 col-lg-12'}
+    {$col = 'col-md-10 col-lg-10'}
 {/if}*}
 {if !isset($hook_mobile)}
-    {$col = 'col-md-10 col-lg-10'}
+    {$col = 'col-md-12 col-lg-12'}
 {/if}
 
 <div class="tvcms-slider-offerbanner-wrapper container-fluid">
