@@ -24,6 +24,7 @@
 *}
 {strip}
 {$col = ''}
+{$mobile_device = $this->context->getMobileDevice()}
 
 {*{if !empty($offer_banner)}
     {$col = 'col-md-10 col-lg-10'}
