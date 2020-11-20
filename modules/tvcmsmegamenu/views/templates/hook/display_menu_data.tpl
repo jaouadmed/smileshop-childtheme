@@ -40,9 +40,9 @@
                         {$menu.sub_menu|escape:'quotes':'UTF-8' nofilter}
                     {else}
                         <li class="level-1 {$menu.class|escape:'html':'UTF-8'}{if count($menu.sub_menu) > 0} parent{/if}" >
-                            {if $menu.type_icon == 0 && $menu.icon != ''}
+                            {if $menu.type_icon == '0' && $menu.icon != ''}
                                 <img class="img-icon" src="{$icon_path|escape:'html':'UTF-8'}{$menu.icon|escape:'html':'UTF-8'}" alt=""/>
-                            {elseif  $menu.type_icon == 1 && $menu.icon != ''}
+                            {elseif  $menu.type_icon == '1' && $menu.icon != ''}
                                 <i class="{$menu.icon|escape:'html':'UTF-8'}"></i>
                             {/if}
                             {$menu.type_icon|@var_dump}
