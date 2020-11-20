@@ -45,6 +45,8 @@
                             {elseif  $menu.type_icon == 1 && $menu.icon != ''}
                                 <i class="{$menu.icon|escape:'html':'UTF-8'}"></i>
                             {/if}
+                            {$menu.type_icon|@var_dump}
+                            {$menu.icon|@var_dump}
                             <a href="{$menu.link|escape:'html':'UTF-8'}">
                                 <span>{$menu.title|escape:'html':'UTF-8'}</span>
                                 {if $menu.subtitle != ''}
