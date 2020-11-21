@@ -59,7 +59,7 @@ $(window).load(function() {
                         $('#tvmobile-megamenu').html(data);
                         //customImgLazyLoad('#tvmobile-megamenu');
                     } else {
-                        $('#tvdesktop-megamenu').html(data);
+                        ////$('#tvdesktop-megamenu').html(data);
                         //customImgLazyLoad('#tvdesktop-megamenu');
                     }
                     megaMenuSlider();
@@ -84,9 +84,8 @@ $(window).load(function() {
         customImgLazyLoad('#tvdesktop-megamenu');
     });
 
-    //setTimeout(function(){ getMegaMenuAjax(); }, 500);
+    setTimeout(function() { getMegaMenuAjax(); }, 500);
     //getMegaMenuAjax();
-    megaMenuSlider();
     $(window).resize(function() {
         megaMenuSlider();
     });
