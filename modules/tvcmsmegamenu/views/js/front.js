@@ -86,6 +86,7 @@ $(window).load(function() {
 
     //setTimeout(function(){ getMegaMenuAjax(); }, 500);
     //getMegaMenuAjax();
+    megaMenuSlider();
     $(window).resize(function() {
         megaMenuSlider();
     });
