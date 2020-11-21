@@ -31,7 +31,7 @@
                 <a href="Javascript:void(0);" title=""><i class='material-icons'>&#xe5d2;</i></a>
             </div>
             <ul class="menu-content">
-                <li class="tvmega-menu-title">
+                <li class="tvmega-menu-title" style="margin-bottom: 0px;">
                     {l s='SmileShop Menu' mod='tvcmsmegamenu'}
                     <a href="Javascript:void(0);"><i class='material-icons'>&#xe14c;</i></a>
                 </li>
@@ -39,7 +39,7 @@
                     {if isset($menu.type) && $menu.type == 'CAT' && $menu.dropdown == 1}
                         {$menu.sub_menu|escape:'quotes':'UTF-8' nofilter}
                     {else}
-                        <li class="level-1 {$menu.class|escape:'html':'UTF-8'}{if count($menu.sub_menu) > 0} parent{/if}" >
+                        <li style="padding: 5px 15px;border-bottom: 1px solid #E5EDEF;" class="level-1 {$menu.class|escape:'html':'UTF-8'}{if count($menu.sub_menu) > 0} parent{/if}" >
                             {*{if $menu.type_icon == '0' && $menu.icon != ''}
                                 <img class="img-icon" src="{$icon_path|escape:'html':'UTF-8'}{$menu.icon|escape:'html':'UTF-8'}" alt=""/>
                             {elseif  $menu.type_icon == '1' && $menu.icon != ''}
