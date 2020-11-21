@@ -128,9 +128,9 @@ img {
     text-transform: uppercase;
     line-height: 24px;
     height: 24px;
-    border-bottom: 2px solid transparent;
+    /*border-bottom: 2px solid transparent;
     position: relative;
-    transition: none;
+    transition: none;*/
 }
 
 #_desktop_megamenu .pos-menu-horizontal .menu-content .menu-item:first-child {
