@@ -22,7 +22,7 @@
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="_desktop_megamenu container_tv_megamenu" class="{if $menu_config.posmegamenu_sticky}use-sticky{/if} {if $menu_config.posmegamenu_center}megamenu_center{/if}">
+<div id="_desktop_megamenu" class="container_tv_megamenu {if $menu_config.posmegamenu_sticky}use-sticky{/if} {if $menu_config.posmegamenu_center}megamenu_center{/if}">
 <div class="pos-menu-horizontal tv-menu-horizontal clearfix">
 	<ul class="menu-content"> 
 		{foreach from=$menus item=menu name=menus}	 			
