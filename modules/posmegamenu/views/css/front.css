@@ -105,11 +105,12 @@ img {
 
 /* Menu item */
 
-#_desktop_megamenu .pos-menu-horizontal .menu-content .menu-item {
+
+/*#_desktop_megamenu .pos-menu-horizontal .menu-content .menu-item {
     float: left;
     margin-left: 38px;
     padding: 15px 0;
-}
+}*/
 
 #_desktop_megamenu .pos-menu-horizontal .menu-content .menu-item>a {
     display: block;
@@ -121,8 +122,8 @@ img {
     padding: 19px 15px;
     /**/
     font-weight: 700;
-    font-size: 14px;
-    color: #ffffff;
+    /*font-size: 14px;
+    color: #ffffff;*/
     background: transparent;
     text-transform: uppercase;
     line-height: 24px;
@@ -150,8 +151,8 @@ img {
     -ms-transition: color 300ms linear;
     -o-transition: color 300ms linear;
     transition: color 300ms linear;
-    border-color: #aed2ff;
-    color: #aed2ff;
+    border-color: rgba(34, 34, 34, 0.541);
+    color: rgba(34, 34, 34, 0.541);
 }
 
 #_desktop_megamenu .pos-menu-horizontal .menu-content .menu-item.active>a:before,
