@@ -40,12 +40,17 @@
                         {$menu.sub_menu|escape:'quotes':'UTF-8' nofilter}
                     {else}
                         <li class="level-1 {$menu.class|escape:'html':'UTF-8'}{if count($menu.sub_menu) > 0} parent{/if}" >
-                            {if $menu.type_icon == '0' && $menu.icon != ''}
+                            {*{if $menu.type_icon == '0' && $menu.icon != ''}
                                 <img class="img-icon" src="{$icon_path|escape:'html':'UTF-8'}{$menu.icon|escape:'html':'UTF-8'}" alt=""/>
                             {elseif  $menu.type_icon == '1' && $menu.icon != ''}
                                 <i class="{$menu.icon|escape:'html':'UTF-8'}"></i>
-                            {/if}
+                            {/if}*}
                             <a href="{$menu.link|escape:'html':'UTF-8'}">
+                                {if $menu.type_icon == '0' && $menu.icon != ''}
+                                    <img width="15%" src="{$icon_path|escape:'html':'UTF-8'}{$menu.icon|escape:'html':'UTF-8'}" alt=""/>
+                                {elseif  $menu.type_icon == '1' && $menu.icon != ''}
+                                    <i class="{$menu.icon|escape:'html':'UTF-8'}"></i>
+                                {/if}
                                 <span>{$menu.title|escape:'html':'UTF-8'}</span>
                                 {if $menu.subtitle != ''}
                                     <span class="menu-subtitle" {if $menu.sub_title_stylesheet != ''}style="{$menu.sub_title_stylesheet}"{/if}>
