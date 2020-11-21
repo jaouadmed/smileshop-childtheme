@@ -26,7 +26,7 @@
 <div class="pos-menu-horizontal tv-menu-horizontal clearfix">
 	<ul class="menu-content"> 
 		{foreach from=$menus item=menu name=menus}	 			
-				<li class="{if $menu.link == {$urls.pages.index} && $page.page_name == 'index'}home{/if} menu-item menu-item{$menu.id_posmegamenu_item} {$menu.item_class|escape:'html':'UTF-8'} {if count($menu.sub_menu) > 0}hasChild{/if} {if isset($menu.selected_item) && $menu.selected_item == 1}active{/if}">
+				<li class="level-1 {if $menu.link == {$urls.pages.index} && $page.page_name == 'index'}home{/if} menu-item menu-item{$menu.id_posmegamenu_item} {$menu.item_class|escape:'html':'UTF-8'} {if count($menu.sub_menu) > 0}hasChild{/if} {if isset($menu.selected_item) && $menu.selected_item == 1}active{/if}">
 					
 					<a href="{if $menu.link}{$menu.link|escape:'html':'UTF-8'}{elseif $menu.custom_link}{$menu.custom_link|escape:'html':'UTF-8'}{else}javascript:void(0){/if}" {if $menu.new_window == 1} target="_blank" {/if}>
 						
