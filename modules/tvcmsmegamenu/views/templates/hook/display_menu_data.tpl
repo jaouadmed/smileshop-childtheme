@@ -46,7 +46,7 @@
                     {else}
                         {if isset($menu.type) && $menu.type == 'CAT' && $isit == 0}
                             <li style="padding: 5px 15px;border-bottom: 1px solid #E5EDEF;">
-                                <span>Beauté &amp; Santé</span>
+                                <span>{l s='Category' d='Shop.Theme.Catalog'}</span>
                             </li>
                             {$isit = 1}
                         {/if}
@@ -65,9 +65,8 @@
                                 <span>{$menu.title|escape:'html':'UTF-8'}</span>
                                 {if $menu.subtitle != ''}
                                     <span class="menu-subtitle" {if $menu.sub_title_stylesheet != ''}style="{$menu.sub_title_stylesheet}"{/if}>
-                                        {l s='Category' d='Shop.Theme.Catalog'}
+                                        {$menu.subtitle|escape:'html':'UTF-8'}
                                     </span>
-                                    {}
                                 {/if}
                             </a>
                             <span class="icon-drop-mobile"></span>
