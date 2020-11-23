@@ -35,7 +35,7 @@
                 <li class="tvmega-menu-title" style="margin-bottom: 0px;">
                     {*l s='SmileShop Menu' mod='tvcmsmegamenu'*}
                     {$shop = Configuration::get('PS_LOGO')}
-                    {$imgurl = Tools::getMediaServer('img_url')}
+                    {$imgurl = Tools::getMediaLink('img_url')}
                     {$shop|@var_dump}
                     {$imgurl|@var_dump}
                     <a href="Javascript:void(0);"><i class='material-icons'>&#xe14c;</i></a>
