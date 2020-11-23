@@ -50,7 +50,7 @@
                             </li>
                             {$isit = 1}
                         {/if}
-                        <li style="border-bottom: 1px solid #E5EDEF;{if isset($menu.type) && $menu.type == 'CAT'}padding: 5px 30px;{else}padding: 5px 15px;{/if}" class="level-1 {$menu.class|escape:'html':'UTF-8'}{if count($menu.sub_menu) > 0} parent{/if}" >
+                        <li style="border-bottom: 1px solid #E5EDEF;{if isset($menu.type) && $menu.type == 'CAT'}padding: 5px 30px;{else}padding: 5px 10px;{/if}" class="level-1 {$menu.class|escape:'html':'UTF-8'}{if count($menu.sub_menu) > 0} parent{/if}" >
                             {*{if $menu.type_icon == '0' && $menu.icon != ''}
                                 <img class="img-icon" src="{$icon_path|escape:'html':'UTF-8'}{$menu.icon|escape:'html':'UTF-8'}" alt=""/>
                             {elseif  $menu.type_icon == '1' && $menu.icon != ''}
