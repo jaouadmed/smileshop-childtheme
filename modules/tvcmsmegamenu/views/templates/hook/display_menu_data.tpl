@@ -30,14 +30,14 @@
             <div class="title-menu-mobile">
                 <a href="Javascript:void(0);" title=""><i class='material-icons'>&#xe5d2;</i></a>
             </div>
-            <ul class="menu-content" style="padding: 15px 0">
+            <ul class="menu-content" style="padding: 5px 0">
 
-                <li class="tvmega-menu-title" style="margin-bottom: 0px;">
+                <li class="tvmega-menu-title" style="padding-bottom: 5px;">
                     {*l s='SmileShop Menu' mod='tvcmsmegamenu'*}
                     {$shop_logo = Configuration::get('PS_LOGO')}
                     {*$shop|@var_dump*}
                     <img class="logo img-responsive" src="/img/{$shop_logo}" alt="smileshop.ma"  width="200">
-                    <a href="Javascript:void(0);"><i class='material-icons'>&#xe14c;</i></a>
+                    <a href="Javascript:void(0);"><i style="margin:5px;top:5%;font-size: 28px;" class='material-icons'>&#xe14c;</i></a>
                 </li>
                 {foreach from=$menus item=menu name=menus}
                     {if isset($menu.type) && $menu.type == 'CAT' && $menu.dropdown == 1}
