@@ -32,7 +32,7 @@
             </div>
             <ul class="menu-content" style="padding: 5px 0">
 
-                <li class="tvmega-menu-title" style="padding-bottom: 5px;">
+                <li class="tvmega-menu-title" style="padding-bottom: 5px;margin-bottom: 0px;">
                     {*l s='SmileShop Menu' mod='tvcmsmegamenu'*}
                     {$shop_logo = Configuration::get('PS_LOGO')}
                     {*$shop|@var_dump*}
