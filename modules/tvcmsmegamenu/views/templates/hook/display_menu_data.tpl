@@ -34,7 +34,7 @@
 
                 <li class="tvmega-menu-title" style="margin-bottom: 0px;">
                     {*l s='SmileShop Menu' mod='tvcmsmegamenu'*}
-                    {$shop = Context::getContext()->shop}
+                    {$shop = _PS_IMG_ . Configuration::get('PS_LOGO')}
                     {$shop|@var_dump}
                     <a href="Javascript:void(0);"><i class='material-icons'>&#xe14c;</i></a>
                 </li>
