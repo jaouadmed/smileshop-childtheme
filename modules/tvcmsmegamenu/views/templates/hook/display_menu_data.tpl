@@ -45,9 +45,12 @@
                         {$menu.sub_menu|escape:'quotes':'UTF-8' nofilter}
                     {else}
                         {if isset($menu.type) && $menu.type == 'CAT' && $isit == 0}
-
+                            <li style="padding: 5px 15px;border-bottom: 1px solid #E5EDEF;">
+                                <span>Beauté &amp; Santé</span>
+                            </li>
+                            {$isit = 1}
                         {/if}
-                        <li style="padding: 5px 15px;border-bottom: 1px solid #E5EDEF;" class="level-1 {$menu.class|escape:'html':'UTF-8'}{if count($menu.sub_menu) > 0} parent{/if}" >
+                        <li style="padding: 5px 15px;border-bottom: 1px solid #E5EDEF;{if isset($menu.type) && $menu.type == 'CAT'}margin:0 20px 0 20px;{/if}" class="level-1 {$menu.class|escape:'html':'UTF-8'}{if count($menu.sub_menu) > 0} parent{/if}" >
                             {*{if $menu.type_icon == '0' && $menu.icon != ''}
                                 <img class="img-icon" src="{$icon_path|escape:'html':'UTF-8'}{$menu.icon|escape:'html':'UTF-8'}" alt=""/>
                             {elseif  $menu.type_icon == '1' && $menu.icon != ''}
@@ -62,8 +65,9 @@
                                 <span>{$menu.title|escape:'html':'UTF-8'}</span>
                                 {if $menu.subtitle != ''}
                                     <span class="menu-subtitle" {if $menu.sub_title_stylesheet != ''}style="{$menu.sub_title_stylesheet}"{/if}>
-                                        {$menu.subtitle|escape:'html':'UTF-8'}
+                                        {l s='Category' d='Shop.Theme.Catalog'}
                                     </span>
+                                    {}
                                 {/if}
                             </a>
                             <span class="icon-drop-mobile"></span>
