@@ -31,8 +31,11 @@
                 <a href="Javascript:void(0);" title=""><i class='material-icons'>&#xe5d2;</i></a>
             </div>
             <ul class="menu-content" style="padding: 15px 0">
+
                 <li class="tvmega-menu-title" style="margin-bottom: 0px;">
-                    {l s='SmileShop Menu' mod='tvcmsmegamenu'}
+                    {*l s='SmileShop Menu' mod='tvcmsmegamenu'*}
+                    {$shop = Context::getContext()->shop}
+                    <img class="logo img-responsive" style="display: none;" src="{$shop.logo}" alt="{$shop.name}"  width="200">
                     <a href="Javascript:void(0);"><i class='material-icons'>&#xe14c;</i></a>
                 </li>
                 {foreach from=$menus item=menu name=menus}
