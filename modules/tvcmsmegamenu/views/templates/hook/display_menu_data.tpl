@@ -49,6 +49,7 @@
                             {elseif  $menu.type_icon == '1' && $menu.icon != ''}
                                 <i class="{$menu.icon|escape:'html':'UTF-8'}"></i>
                             {/if}*}
+                            {$menu|@var_dump}
                             <a href="{$menu.link|escape:'html':'UTF-8'}">
                                 {if $menu.type_icon == '0' && $menu.icon != ''}
                                     <img width="15%" src="{$icon_path|escape:'html':'UTF-8'}{$menu.icon|escape:'html':'UTF-8'}" alt=""/>
