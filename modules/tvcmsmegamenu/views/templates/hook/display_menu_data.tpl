@@ -45,7 +45,7 @@
                         {$menu.sub_menu|escape:'quotes':'UTF-8' nofilter}
                     {else}
                         {if isset($menu.type) && $menu.type == 'CAT' && $isit == 0}
-                            <li style="padding: 5px 15px;border-bottom: 1px solid #E5EDEF;">
+                            <li style="padding: 5px 15px;border-bottom: 1px solid #E5EDEF;" class="catgr">
                                 <span>{l s='Categories' d='Shop.Theme.Catalog'}</span>
                             </li>
                             {$isit = 1}
