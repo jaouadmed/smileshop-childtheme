@@ -36,7 +36,7 @@
                     {*l s='SmileShop Menu' mod='tvcmsmegamenu'*}
                     {$shop_logo = Configuration::get('PS_LOGO')}
                     {*$shop|@var_dump*}
-                    <img class="logo img-responsive" src="/img/{$shop_logo}" alt="smileshop.ma"  width="200">
+                    <img class="logo img-responsive" src="/img/{$shop_logo}" alt="smileshop.ma"  width="150">
                     <a href="Javascript:void(0);"><i style="margin:5px;top:5%;font-size: 28px;" class='material-icons'>&#xe14c;</i></a>
                 </li>
                 {foreach from=$menus item=menu name=menus}
