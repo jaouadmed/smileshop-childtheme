@@ -46,7 +46,7 @@
                     {else}
                         {if isset($menu.type) && $menu.type == 'CAT' && $isit == 0}
                             <li style="padding: 5px 15px;border-bottom: 1px solid #E5EDEF;">
-                                <span>{l s='category' d='Shop.Theme.Catalog'}</span>
+                                <span>{l s='Categories' d='Shop.Theme.Catalog'}</span>
                             </li>
                             {$isit = 1}
                         {/if}
