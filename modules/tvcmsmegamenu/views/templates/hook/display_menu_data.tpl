@@ -34,9 +34,9 @@
 
                 <li class="tvmega-menu-title" style="margin-bottom: 0px;">
                     {*l s='SmileShop Menu' mod='tvcmsmegamenu'*}
-                    {$shop = Configuration::get('PS_LOGO')}
-                    {$shop|@var_dump}
-                    <img class="logo img-responsive" style="display: none;" src="/img/{$shop}" alt="smileshop.ma"  width="200">
+                    {$shop_logo = Configuration::get('PS_LOGO')}
+                    {*$shop|@var_dump*}
+                    <img class="logo img-responsive" src="/img/{$shop_logo}" alt="smileshop.ma"  width="200">
                     <a href="Javascript:void(0);"><i class='material-icons'>&#xe14c;</i></a>
                 </li>
                 {foreach from=$menus item=menu name=menus}
