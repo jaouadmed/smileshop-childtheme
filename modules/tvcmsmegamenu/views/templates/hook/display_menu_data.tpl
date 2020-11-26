@@ -41,6 +41,11 @@
                 </li>
                 <li class="tvmega-menu-title" style="padding-bottom: 5px;margin-bottom: 0px;">
                     <div class="tvheader-language">{hook h='displayNavLanguageBlock'}</div>
+                    <script>
+                        $(document).ready(function() {
+                            $('.tv-language-dropdown').removeClass('open').hide(); 
+                        }     
+                    </script>
                 </li>
                 {$isit = 0}
                 {foreach from=$menus item=menu name=menus}
