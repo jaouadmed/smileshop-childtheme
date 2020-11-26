@@ -42,7 +42,7 @@
                 <li class="tvmega-menu-title" style="padding-bottom: 5px;margin-bottom: 0px;">
                     <div class="tvheader-language">{hook h='displayNavLanguageBlock'}</div>
                     <script>
-                        $(document).ready(function() {
+                        $(window).load(function() {
                             $('.tv-language-dropdown').removeClass('open').hide(); 
                         }     
                     </script>
