@@ -39,6 +39,9 @@
                     <img src="/img/{$shop_logo}" alt="smileshop.ma"  width="150">
                     <a href="Javascript:void(0);"><i style="margin:5px;top:5%;font-size: 28px;" class='material-icons'>&#xe14c;</i></a>
                 </li>
+                <li class="tvmega-menu-title" style="padding-bottom: 5px;margin-bottom: 0px;">
+                    <div class="tvheader-language">{hook h='displayNavLanguageBlock'}</div>
+                </li>
                 {$isit = 0}
                 {foreach from=$menus item=menu name=menus}
                     {if isset($menu.type) && $menu.type == 'CAT' && $menu.dropdown == 1}
