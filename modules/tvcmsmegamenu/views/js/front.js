@@ -57,8 +57,8 @@ $(window).load(function() {
                 success: function(data) {
                     if (document.body.clientWidth <= 991) {
                         $('#tvmobile-megamenu').html(data);
-                        $('.tv-language-dropdown').removeClass('open').hide();
-                        //customImgLazyLoad('#tvmobile-megamenu');
+                        $('#langMobileTarget').append($('#tvcmsdesktop-language-selector').clone())
+                            //customImgLazyLoad('#tvmobile-megamenu');
                     } else {
                         ////$('#tvdesktop-megamenu').html(data);
                         //customImgLazyLoad('#tvdesktop-megamenu');
