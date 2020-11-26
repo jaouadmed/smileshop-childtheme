@@ -82,6 +82,7 @@ $(window).load(function() {
         $(this).next().toggle(100);
         $(this).toggleClass('opened');
         customImgLazyLoad('#tvdesktop-megamenu');
+        $('.tv-language-dropdown').removeClass('open').hide();
     });
 
     setTimeout(function() { getMegaMenuAjax(); }, 500);
