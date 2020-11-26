@@ -57,6 +57,7 @@ $(window).load(function() {
                 success: function(data) {
                     if (document.body.clientWidth <= 991) {
                         $('#tvmobile-megamenu').html(data);
+                        $('.tv-language-dropdown').removeClass('open').hide();
                         //customImgLazyLoad('#tvmobile-megamenu');
                     } else {
                         ////$('#tvdesktop-megamenu').html(data);
@@ -82,7 +83,6 @@ $(window).load(function() {
         $(this).next().toggle(100);
         $(this).toggleClass('opened');
         customImgLazyLoad('#tvdesktop-megamenu');
-        $('.tv-language-dropdown').removeClass('open').hide();
     });
 
     setTimeout(function() { getMegaMenuAjax(); }, 500);
