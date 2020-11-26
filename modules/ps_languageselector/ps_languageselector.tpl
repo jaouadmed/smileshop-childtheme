@@ -33,7 +33,7 @@
             <ul class="tv-language-dropdown tv-dropdown">
                 {foreach from=$languages item=language}
                 <li {if $language.id_lang==$current_language.id_lang}class="current"{/if}>
-                    <a href="{url entity='language' id=$language.id_lang route='/'}" title='{$language.name_simple}'> <img class="tvimage-lazy lang-flag" src="{$urls.img_lang_url}{$language.id_lang}.jpg"/> <span>{$language.name_simple}</span>
+                    <a href="{url entity='language' id=$language.id_lang route=''}" title='{$language.name_simple}'> <img class="tvimage-lazy lang-flag" src="{$urls.img_lang_url}{$language.id_lang}.jpg"/> <span>{$language.name_simple}</span>
                     </a>
                 </li>
                 
