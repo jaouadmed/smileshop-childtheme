@@ -119,6 +119,7 @@ img {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0;
     padding: 19px 15px;
+    text-transform: uppercase;
     /*display: block;
     padding:0;
     font-weight: 700;*/
