@@ -51,7 +51,7 @@
 {extends file='page.tpl'}
 
 {block name='page_content'}
-{*
+<!--
 <div class="col-sm-12 col-xs-12 tvcmswishlist">
 
     <div id="mywishlist">
@@ -281,7 +281,7 @@
     </div>
 
 </div>
-*}
+-->
 
 
 <script language="javascript">
