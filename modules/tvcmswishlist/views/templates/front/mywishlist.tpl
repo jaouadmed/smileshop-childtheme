@@ -51,7 +51,7 @@
 {extends file='page.tpl'}
 
 {block name='page_content'}
-<!--
+
 <div class="col-sm-12 col-xs-12 tvcmswishlist">
 
     <div id="mywishlist">
@@ -84,7 +84,7 @@
 
     	{if $id_customer|intval neq 0}
 
-    		<form method="post" class="std" id="form_wishlist">
+    		<!--<form method="post" class="std" id="form_wishlist">
 
     			<fieldset>
 
@@ -116,11 +116,11 @@
 
     			</fieldset>
 
-    		</form>
+    		</form>-->
 
     		{if $wishlists}
 
-    			<div id="block-history" class="block-center table-responsive">
+    			<!--<div id="block-history" class="block-center table-responsive">
 
     				<table class="table table-bordered  tvwishlist-info">
 
@@ -242,7 +242,7 @@
 
     				</table>
 
-    			</div>
+    			</div>-->
 
     			<div id="block-order-detail">&nbsp;</div>
 
@@ -281,7 +281,7 @@
     </div>
 
 </div>
--->
+
 
 
 <script language="javascript">
