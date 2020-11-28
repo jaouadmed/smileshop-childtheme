@@ -288,7 +288,7 @@
 	{section name=i loop=$wishlists}
 		{if isset($wishlists[i].default) && $wishlists[i].default == 1}
 			$(window).load(function() {
-				WishlistDefault('wishlist_{$wishlists[i].id_wishlist|intval|escape:'htmlall':'UTF-8'}', '{$wishlists[i].id_wishlist|intval|escape:'htmlall':'UTF-8'}');
+				WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');
 			})
 		{/if}
 	{/section}
