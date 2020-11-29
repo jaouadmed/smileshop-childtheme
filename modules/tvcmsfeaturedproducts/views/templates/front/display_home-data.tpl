@@ -102,13 +102,11 @@
                 {else}
                     <div class="tvfeatured-product-content {$col} container">
                         <div class="tvall-block-box-shadows">
-                            <div >
-                                <div >
+                                <div class="col-sm-6 col-xs-6">
                                     {foreach $dis_arr_result.data.product_list as $product}
 		                                {include file='catalog/_partials/miniatures/product.tpl' product=$product }
                                     {/foreach}
                                 </div>
-                            </div>
                         </div>
                     </div>
                 {/if}
