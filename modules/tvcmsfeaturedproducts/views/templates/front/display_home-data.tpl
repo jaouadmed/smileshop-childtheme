@@ -101,5 +101,5 @@
         </div>
     </div>
     {/if}
-    {Context::getContext()->getMobileDevice()|@var_dump}
+    {Context::getContext()->isMobile()|@var_dump}
     {/strip}
