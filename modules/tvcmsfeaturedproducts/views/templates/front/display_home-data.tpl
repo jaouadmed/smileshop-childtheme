@@ -44,7 +44,7 @@
             </div>
             
             <div class='tvfeature-product-offer-banner tvall-product-offer-banner'>
-                {if !Context::getContext()->isMobile()}
+                {if Context::getContext()->isMobile() != 1}
                     {if $image == true && $image_side == 'left'}
                     <div class="tvall-product-branner">
                         <div class="tvall-block-box-shadows">
