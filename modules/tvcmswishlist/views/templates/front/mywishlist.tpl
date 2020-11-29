@@ -99,7 +99,7 @@
 	{if isset($wishlists[i].default) && $wishlists[i].default == 1}
 		<script >
 	
-			$(document).ready(function() {
+			$(window).on('load', function() {
 				WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');
 			});
 		
