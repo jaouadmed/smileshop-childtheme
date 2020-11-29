@@ -98,11 +98,11 @@
 {section name=i loop=$wishlists}
 	{if isset($wishlists[i].default) && $wishlists[i].default == 1}
 		<script >
-	
-			$(window).on('load', function() {
+			$(document).ready(function() { 
+			$(window).load(function() { 
 				WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');
 			});
-		
+			});		
 		</script>
 	{/if}
 {/section}
