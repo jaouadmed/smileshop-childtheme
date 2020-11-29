@@ -103,9 +103,9 @@
                     <div class="tvfeatured-product-content {$col} container">
                         <div class="tvall-block-box-shadows">
                             <div class="tvfeatured-product">
-                                <div >
+                                <div class="">
                                     {foreach $dis_arr_result.data.product_list as $product}
-                                    {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+                                    	{include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product image_size='home_default'}
                                     {/foreach}
                                 </div>
                             </div>
