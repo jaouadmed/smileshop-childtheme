@@ -104,7 +104,7 @@
                         <div class="tvall-block-box-shadows">
                             <div class="tvfeatured-product">
                                 {foreach $dis_arr_result.data.product_list as $product}
-                                    <div class="col-sm-6 col-xs-6">
+                                    <div class="col-sm-6 col-xs-6" style="padding:0">
                                     {include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product image_size='home_default'}
                                     </div>
                                 {/foreach}
