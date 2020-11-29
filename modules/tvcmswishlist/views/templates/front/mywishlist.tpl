@@ -95,16 +95,17 @@
 </div>
 
 
-
-<script language="javascript">
-	{section name=i loop=$wishlists}
-		{if isset($wishlists[i].default) && $wishlists[i].default == 1}
+{section name=i loop=$wishlists}
+	{if isset($wishlists[i].default) && $wishlists[i].default == 1}
+		<script >
+	
 			$(document).ready(function() {
 				WishlistManage('block-order-detail', '{$wishlists[i].id_wishlist|intval}');
-			})
-		{/if}
-	{/section}
-</script>
+			});
+		
+		</script>
+	{/if}
+{/section}
 
 {/block}
 
