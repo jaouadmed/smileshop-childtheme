@@ -105,7 +105,7 @@
                             <div >
                                 <div >
                                     {foreach $dis_arr_result.data.product_list as $product}
-		                                {include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product image_size='home_default'}
+		                                {include file='catalog/_partials/miniatures/product-list.tpl' product=$product}
                                     {/foreach}
                                 </div>
                             </div>
