@@ -23,10 +23,6 @@
     * International Registered Trademark & Property of PrestaShop SA
     *}
     {strip}
-
-    {extends file='catalog/listing/product-list.tpl'}
-    {block name='product_list_header'}
-    {/block}
     {if $main_heading['main_image_status']}
     {$col = 'tvimage-true'}
     {$image = true}
@@ -105,4 +101,5 @@
         </div>
     </div>
     {/if}
+    {Context::getContext()->getMobileDevice()|@var_dump}
     {/strip}
