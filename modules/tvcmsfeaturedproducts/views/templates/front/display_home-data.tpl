@@ -105,7 +105,7 @@
                             <div class="tvfeatured-product">
                                 <div class="products tvfeatured-product-wrapper tvproduct-wrapper-content-box" data-has-image='{if $image == true}true{else}false{/if}'>
                                     {foreach $dis_arr_result.data.product_list as $product}
-                                    {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+				                    {include file='catalog/_partials/miniatures/product-list-view.tpl' product=$product image_size='home_default'}
                                     {/foreach}
                                 </div>
                             </div>
