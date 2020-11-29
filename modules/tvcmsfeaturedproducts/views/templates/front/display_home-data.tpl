@@ -117,5 +117,4 @@
         </div>
     </div>
     {/if}
-    {if Context::getContext()->isMobile()}
     {/strip}
