@@ -102,8 +102,8 @@
                 {else}
                     <div class="tvfeatured-product-content {$col} container">
                         <div class="tvall-block-box-shadows">
-                            <div class="tvfeatured-product">
-                                <div class="products tvfeatured-product-wrapper tvproduct-wrapper-content-box" data-has-image='{if $image == true}true{else}false{/if}'>
+                            <div >
+                                <div >
                                     {foreach $dis_arr_result.data.product_list as $product}
 		                                {include file='catalog/_partials/miniatures/product.tpl' product=$product }
                                     {/foreach}
