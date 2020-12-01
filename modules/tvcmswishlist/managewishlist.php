@@ -111,9 +111,9 @@ if ($context->customer->isLogged()) {
             $module = new TvcmsWishList();
             $context->smarty->assign('link', $context->link);
             if (Tools::file_exists_cache(_PS_THEME_DIR_
-                .'modules/blockwishlist/views/templates/front/managewishlist-edited.tpl')) {
+                .'modules/tvcmswishlist/views/templates/front/managewishlist-edited.tpl')) {
                 $context->smarty->display(_PS_THEME_DIR_
-                    .'modules/blockwishlist/views/templates/front/managewishlist-edited.tpl');
+                    .'modules/tvcmswishlist/views/templates/front/managewishlist-edited.tpl');
             } elseif (Tools::file_exists_cache(dirname(__FILE__).'/views/templates/front/managewishlist-edited.tpl')) {
                 $context->smarty->display(dirname(__FILE__).'/views/templates/front/managewishlist-edited.tpl');
             } elseif (Tools::file_exists_cache(dirname(__FILE__).'/managewishlist-edited.tpl')) {
