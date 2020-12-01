@@ -56,7 +56,7 @@
 
         <ul class="row wlp_bought_list">
 
-            {foreach from=$products item=product name=i}
+            {foreach $products as $product}
 
                 <div class="col-sm-6 col-xs-6 col-md-4" style="padding:2px">
                 {include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product image_size='home_default'}
