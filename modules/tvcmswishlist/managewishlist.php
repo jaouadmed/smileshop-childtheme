@@ -112,12 +112,11 @@ if ($context->customer->isLogged()) {
             $context->smarty->assign('link', $context->link);
             if (Tools::file_exists_cache(_PS_THEME_DIR_
                 .'modules/tvcmswishlist/views/templates/front/managewishlist.tpl')) {
-                $context->smarty->display(_PS_THEME_DIR_
-                    .'modules/tvcmswishlist/views/templates/front/managewishlist.tpl');
+                $context->smarty->display('managewishlist.tpl');
             } elseif (Tools::file_exists_cache(dirname(__FILE__).'/views/templates/front/managewishlist.tpl')) {
-                $context->smarty->display(dirname(__FILE__).'/views/templates/front/managewishlist.tpl');
+                $context->smarty->display('managewishlist.tpl');
             } elseif (Tools::file_exists_cache(dirname(__FILE__).'/managewishlist.tpl')) {
-                $context->smarty->display(dirname(__FILE__).'/managewishlist.tpl');
+                $context->smarty->display('managewishlist.tpl');
             } else {
                 echo $module->l('No template found', 'managewishlist');
             }
