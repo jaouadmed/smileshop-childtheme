@@ -9,7 +9,6 @@
         </li> 
         {/if} 
         
-        {/if}
         {foreach from=$product.extraContent item=extra key=extraKey}
         <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#extra-{$extraKey}" role="tab" aria-controls="extra-{$extraKey}">
