@@ -47,7 +47,7 @@
     *}
 
     {strip}
-    {$urls|@var_dump} 
+    {Context::getContext()|@var_dump} 
     {if $products}
 
     <div class="wishlistLinkTop">
