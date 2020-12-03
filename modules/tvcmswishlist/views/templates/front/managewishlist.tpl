@@ -47,7 +47,7 @@
     *}
 
     {strip}
-
+    {$urls|@var_dump} 
     {if $products}
 
     <div class="wishlistLinkTop">
@@ -119,7 +119,7 @@
                                         <button data-button-action="add-to-cart" type="submit" class="btn add-to-cart tvproduct-add-to-cart {if !$product.add_to_cart_url}tvproduct-out-of-stock disable{/if}" title="{if !$product.add_to_cart_url}{l s='Out Of Stock' d='Shop.Theme.Actions'}{else}{l s='Add To Cart' d='Shop.Theme.Actions'}{/if}" {if !$product.add_to_cart_url}disabled{/if} data-toggle="tvtooltip" data-placement="top" data-html="true" data-original-title="{if !$product.add_to_cart_url}{l s='Out Of Stock' d='Shop.Theme.Actions'}{else}{l s='Add To Cart' d='Shop.Theme.Actions'}{/if}">
 
                                             <i class='material-icons add-cart'>&#xe8cc;</i>
-                                            
+
                                         </button>
 
                                     </form>
