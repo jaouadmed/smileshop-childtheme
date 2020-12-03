@@ -12,13 +12,7 @@
                     </a>
         </li>
         {/if}
-        {*{foreach from=$product.extraContent item=extra key=extraKey}
-        {*<li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#extra-{$extraKey}" role="tab" aria-controls="extra-{$extraKey}">
-                {$extra.title}
-            </a>
-        </li>*}
-        {/foreach}*}
+        
         {* start product comment tab hook *}
         {hook h='displayProductListReviewsTab'}
         {* End product comment tab hook *}
