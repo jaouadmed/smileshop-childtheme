@@ -23,9 +23,7 @@
             <div class="product-description">{$product.description nofilter}</div>
             {/block}
         </div>
-        {*{block name='product_details'}
-        {include file='catalog/_partials/product-details.tpl'}
-        {/block}*}
+        
         {block name='product_attachments'}
         {if $product.attachments}
         <div class="tab-pane fade in" id="attachments" role="tabpanel">
