@@ -47,7 +47,6 @@
     *}
 
     {strip}
-    {Context::getContext()->cart|@var_dump} 
     {if $products}
 
     <div class="wishlistLinkTop">
