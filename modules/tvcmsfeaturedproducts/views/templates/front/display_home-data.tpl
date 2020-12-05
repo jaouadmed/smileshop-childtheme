@@ -39,81 +39,19 @@
     {if $dis_arr_result.status && $dis_arr_result.home_status && count($dis_arr_result.data.product_list) > 0}
     <div class='tvfeatured-product-wrapper-box container'>      
         <div class="tvfeatured-product-all-box">
-            <div class="tvfeatured-main-title-wrapper">
-                {include file='_partials/tvcms-main-title.tpl' main_heading=$main_heading path=$dis_arr_result['path']}
-            </div>
-            
             <div class='tvfeature-product-offer-banner tvall-product-offer-banner'>
-                {if Context::getContext()->isMobile() != 1}
-                    {if $image == true && $image_side == 'left'}
-                    <div class="tvall-product-branner">
-                        <div class="tvall-block-box-shadows">
-                            <div class="tvbanner-hover-wrapper">
-                                <div class="tvbranner-hover-info-box"></div>
-                                <div class='tvbanner-hover'></div>
-                                <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{$dis_arr_result.path}{$main_heading.data.image}" alt="{l s='featured Offer Banner' mod='tvcmsfeaturedproducts'}">
-                                <div class='tvbanner-hover1'></div>
-                            </div>
-                        </div>
-                    </div>
-                    {/if}
-                    <div class="tvfeatured-product-content {$col} container">
-                        <div class="tvall-block-box-shadows">
-                            <div class="tvfeatured-product">
-                                <div class="products owl-theme owl-carousel tvfeatured-product-wrapper tvproduct-wrapper-content-box" data-has-image='{if $image == true}true{else}false{/if}'>
-                                    {foreach $dis_arr_result.data.product_list as $product}
-                                    {include file="catalog/_partials/miniatures/product.tpl" product=$product tv_product_type="featured_product"}
-                                    {/foreach}
+                <div class="tvfeatured-product-content {$col} container">
+                    <div class="tvall-block-box-shadows">
+                        <div class="tvfeatured-product">
+                            {foreach $dis_arr_result.data.product_list as $product}
+                                <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3" style="padding:2px">
+                                {include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product image_size='home_default'}
                                 </div>
-                            </div>
+                            {/foreach}
                         </div>
                     </div>
-                    {if $image == true && $image_side == 'right'}
-                    <div class="tvall-product-branner">
-                        <div class="tvall-block-box-shadows">
-                            <div class="tvbanner-hover-wrapper">
-                                <div class="tvbranner-hover-info-box"></div>
-                                <div class='tvbanner-hover'></div>
-                                <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{$dis_arr_result.path}{$main_heading.data.image}" alt="{l s='featured Offer Banner' mod='tvcmsfeaturedproducts'}">
-                                <div class='tvbanner-hover1'></div>
-                            </div>
-                        </div>
-                    </div>
-                    {/if}
-                    <div class='tvfeature-pagination-wrapper tv-pagination-wrapper'>
-                        <div class="tvfeature-pagination">
-                            <div class="tvcmsfeatured-pagination">
-                                <div class="tvcmsfeatured-next-pre-btn tvcms-next-pre-btn">
-                                    <div class="tvcmsfeatured-prev tvcmsprev-btn" data-parent="tvcmsfeatured-product">
-                                        <i class='material-icons'>&#xe314;</i>
-                                    </div>
-                                    <div class="tvcmsfeatured-next tvcmsnext-btn" data-parent="tvcmsfeatured-product">
-                                        <i class='material-icons'>&#xe315;</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tvallproduct-link">
-                        <a class="all-product-link" href="{$dis_arr_result.link}">
-                            {l s='All Featured Products' mod='tvcmsfeaturedproducts'} <i class='material-icons'>&#xe315;</i>
-                        </a>
-                    </div>
-                {else}
-                    <div class="tvfeatured-product-content {$col} container">
-                        <div class="tvall-block-box-shadows">
-                            <div class="tvfeatured-product">
-                                {foreach $dis_arr_result.data.product_list as $product}
-                                    <div class="col-sm-6 col-xs-6 col-md-4" style="padding:2px">
-                                    {include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product image_size='home_default'}
-                                    </div>
-                                {/foreach}
-                            </div>
-                        </div>
-                    </div>
-                {/if}
+                </div>
             </div>
-            
         </div>
     </div>
     {/if}
