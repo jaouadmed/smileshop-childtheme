@@ -42,66 +42,17 @@
         {include file='_partials/tvcms-main-title.tpl' main_heading=$main_heading path=$dis_arr_result['path']}
     </div>
     <div class='tvall-product-offer-banner'>
-        {if Context::getContext()->isMobile() != 1}
-            {if $image == true && $image_side == 'left'}
-            <div class="tvall-product-branner">
-                <div class="tvbanner-hover-wrapper tvall-block-box-shadows">
-                    <div class="tvbranner-hover-info-box"></div>
-                    <div class='tvbanner-hover'></div>
-                    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{$dis_arr_result.path}{$main_heading.data.image}" alt="{l s='new Offer Banner' mod='tvcmsnewproducts'}">
-                    <div class='tvbanner-hover1'></div>
-                </div>
-            </div>
-            {/if}
-            <div class="tvnew-product-content {$col} container">
-                <div class="tvall-block-box-shadows">
-                    <div class="tvnew-product">
-                        <div class="products owl-theme owl-carousel tvnew-product-wrapper tvproduct-wrapper-content-box" data-has-image='{if $image == true}true{else}false{/if}'>
-                            {foreach $dis_arr_result.data.product_list as $product}
-                            {include file="catalog/_partials/miniatures/product.tpl" product=$product tv_product_type="new_product"}
-                            {/foreach}
+        <div class="tvnew-product-content {$col} container">
+            <div class="tvall-block-box-shadows">
+                <div class="tvnew-product">
+                    {foreach $dis_arr_result.data.product_list as $product}
+                        <div class="col-sm-6 col-xs-6 col-md-3 col-lg-3" style="padding:2px">
+                        {include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product image_size='home_default'}
                         </div>
-                    </div>
+                    {/foreach} 
                 </div>
             </div>
-            {if $image == true && $image_side == 'right'}
-            <div class="tvall-product-branner">
-                <div class="tvbanner-hover-wrapper tvall-block-box-shadows">
-                    <div class="tvbranner-hover-info-box"></div>
-                    <div class='tvbanner-hover'></div>
-                    <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{$dis_arr_result.path}{$main_heading.data.image}" alt="{l s='new Offer Banner' mod='tvcmsnewproducts'}">
-                    <div class='tvbanner-hover1'></div>
-                </div>
-            </div>
-            {/if}
-            <div class='tvnew-pagination-wrapper tv-pagination-wrapper'>
-                <div class="tvnew-pagination">
-                    <div class="tvcmsnew-pagination">
-                        <div class="tvcmsnew-next-pre-btn tvcms-next-pre-btn">
-                            <div class="tvcmsnew-prev tvcmsprev-btn" data-parent="tvcmsnew-product"><i class='material-icons'>&#xe314;</i></div>
-                            <div class="tvcmsnew-next tvcmsnext-btn" data-parent="tvcmsnew-product"><i class='material-icons'>&#xe315;</i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tvallproduct-link">
-                <a class="all-product-link" href="{$dis_arr_result.link}">
-                    {l s='All New Products' mod='tvcmsnewproducts'} <i class='material-icons'>&#xe315;</i>
-                </a>
-            </div>
-        {else}
-            <div class="tvnew-product-content {$col} container">
-                <div class="tvall-block-box-shadows">
-                    <div class="tvnew-product">
-                        {foreach $dis_arr_result.data.product_list as $product}
-                            <div class="col-sm-6 col-xs-6 col-md-4" style="padding:2px">
-                            {include file='catalog/_partials/miniatures/product-grid-view.tpl' class_name='grid'  product=$product image_size='home_default'}
-                            </div>
-                        {/foreach}
-                    </div>
-                </div>
-            </div>
-        {/if}
+        </div>
     </div>
 </div>
 {/if}
