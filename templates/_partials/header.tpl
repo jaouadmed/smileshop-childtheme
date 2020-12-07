@@ -4,17 +4,6 @@
 
 {block name='header_top'}
 <div class="tvcmsdesktop-top-header-wrapper ">
-    <div class='container-fluid tvcmsdesktop-top-header'>
-        <div class="container tvcmsdesktop-top-wrapper">
-            <div class='tvheader-offer-wrapper col-xl-6 col-lg-6 col-md-6 col-sm-12'>
-                {hook h='displayTopOfferText'}
-            </div>
-            <div class='tvheader-language-currency-wrapper col-xl-6 col-lg-6 col-md-6 col-sm-12'>
-                <div class="tvheader-language">{hook h='displayNavLanguageBlock'}</div>
-                <div class="tvheader-currency">{hook h='displayNavCurrencyBlock'}</div>
-            </div>
-        </div>
-    </div>
     <div class='container-fluid tvcmsdesktop-top-second hidden-md-down'>
         <div class="container">
             <div class="row tvcmsdesktop-top-header-box">
@@ -54,7 +43,9 @@
                                             <li>{hook h='displayNavWishlistBlock'}</li>
                                             <li>{hook h='displayNavProductCompareBlock'}</li>
                                             <li>{hook h='displayNavCustomerSignInBlock'}</li>
-                                            <li class="tvmobile-lang hidden-lg-up"></li>
+                                            <li class="tvmobile-lang">
+                                                {hook h='displayNavLanguageBlock'}
+                                            </li>
                                             <li class="tvmobile-curr hidden-lg-up"></li>
                                         </ul>
                                     </div>
