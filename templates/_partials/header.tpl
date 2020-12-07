@@ -7,7 +7,7 @@
     <div class='container-fluid tvcmsdesktop-top-second hidden-md-down'>
         <div class="container">
             <div class="row tvcmsdesktop-top-header-box">
-                <div class='col-md-4 col-xl-4 col-sm-12 col-xs-2 tvcms-header-logo-wrapper'>
+                <div class=' col-xl-3 col-md-3 col-sm-12 col-xs-2 tvcms-header-logo-wrapper'>
                     <div class="hidden-sm-down tvcms-header-logo" id="tvcmsdesktop-logo">
                         <div class="tv-header-logo">
                             <a href="{$urls.base_url}">
@@ -17,10 +17,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 col-md-6 col-xl-4 col-xs-10 tvcmsheader-search">
+                <div class=" col-lg-5 col-md-5 col-xl-4 col-sm-12 col-xs-10 tvcmsheader-search">
                     <div class='tvcmssearch-wrapper' id="_desktop_search">
                         {hook h='displayNavSearchBlock'}
                     </div>
+                </div>
+                <div class=" col-lg-2 col-md-2 col-xl-4 col-sm-12 col-xs-10 tvmobile-lang">
+                    {hook h='displayNavLanguageBlock'}
                 </div>
                 <div class="col-sm-12 col-lg-4 col-md-4 col-xl-4 tvcmsheader-nav-right">
                     <div class="tv-contact-account-cart-wrapper">
@@ -43,9 +46,7 @@
                                             <li>{hook h='displayNavWishlistBlock'}</li>
                                             <li>{hook h='displayNavProductCompareBlock'}</li>
                                             <li>{hook h='displayNavCustomerSignInBlock'}</li>
-                                            <li class="tvmobile-lang">
-                                                {hook h='displayNavLanguageBlock'}
-                                            </li>
+                                            <li class="tvmobile-lang hidden-lg-up"></li>
                                             <li class="tvmobile-curr hidden-lg-up"></li>
                                         </ul>
                                     </div>
