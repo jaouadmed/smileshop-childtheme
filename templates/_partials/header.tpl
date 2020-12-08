@@ -17,14 +17,16 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-lg-5 col-md-5 col-xl-4 col-sm-12 col-xs-10 tvcmsheader-search">
+                <div class=" col-lg-2 col-md-2 col-xl-2 col-sm-12 col-xs-10 tvmobile-lang">
+                    {hook h='displayNavLanguageBlock'}
+                </div>
+                
+                <div class=" col-lg-5 col-md-5 col-xl-5 col-sm-12 col-xs-10 tvcmsheader-search">
                     <div class='tvcmssearch-wrapper' id="_desktop_search">
                         {hook h='displayNavSearchBlock'}
                     </div>
                 </div>
-                <div class=" col-lg-2 col-md-2 col-xl-4 col-sm-12 col-xs-10 tvmobile-lang">
-                    {hook h='displayNavLanguageBlock'}
-                </div>
+                
                 <div class="col-sm-12 col-lg-4 col-md-4 col-xl-4 tvcmsheader-nav-right">
                     <div class="tv-contact-account-cart-wrapper">
                         <div id='tvcmsdesktop-account-button'>
