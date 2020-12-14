@@ -27,7 +27,7 @@
   <h4 class="text-center">{l s='Store information' d='Shop.Theme.Global'}</h4>
   <div class="row">
   {if $contact_infos.address.formatted}
-    <div class="block tvaddress col-xs-12 col-sm-6 col-md-3">
+    <div class="block tvaddress col-xs-12 col-sm-6 col-md-4">
       <div class="icon"><i class="material-icons">&#xE55F;</i></div>
       <div class="data">
         <p>{$contact_infos.address.formatted nofilter}</p>
