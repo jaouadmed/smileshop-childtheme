@@ -69,18 +69,18 @@
                     <h2>{l s='You might also like' d='Shop.Theme.Catalog'}</h2>
                 </div>
             </div>
+            <div class='tvlike-pagination-wrapper tv-pagination-wrapper'>
+            <div class="tvcmslike-next-pre-btn tvcms-next-pre-btn">
+                <div class="tvcmslike-prev tvcmsprev-btn" data-parent="tvcmslike-product"><i class='material-icons'>&#xe314;</i></div>
+                <div class="tvcmslike-next tvcmsnext-btn" data-parent="tvcmslike-product"><i class='material-icons'>&#xe315;</i></div>
+            </div>
+        </div>
         </div>
         <div class="tvlike-product">
             <div class="products owl-theme owl-carousel tvlike-product-wrapper tvproduct-wrapper-content-box">
                 {foreach $accessories as $product}
                 {include file="catalog/_partials/miniatures/product.tpl" product=$product tv_product_type="like_product"}
                 {/foreach}
-            </div>
-        </div>
-        <div class='tvlike-pagination-wrapper tv-pagination-wrapper'>
-            <div class="tvcmslike-next-pre-btn tvcms-next-pre-btn">
-                <div class="tvcmslike-prev tvcmsprev-btn" data-parent="tvcmslike-product"><i class='material-icons'>&#xe314;</i></div>
-                <div class="tvcmslike-next tvcmsnext-btn" data-parent="tvcmslike-product"><i class='material-icons'>&#xe315;</i></div>
             </div>
         </div>
     </div>
