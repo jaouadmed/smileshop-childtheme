@@ -43,7 +43,7 @@
                         -{$product.discount_percentage_absolute}
                     {elseif $product.discount_type === 'amount' && $product.discount_to_display !== ''}
                         
-                        -{($product.regular_price - $product.price)|round:0} {Currency::getDefaultCurrency()->iso_code}
+                        -{($product.regular_price - $product.price)|round:0} {Currency::getDefaultCurrency()->sign}
                     {/if}
                 </div>
             </i>
