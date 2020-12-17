@@ -43,7 +43,7 @@
                         -{$product.discount_percentage_absolute}
                     {elseif $product.discount_type === 'amount' && $product.discount_to_display !== ''}
                         
-                        -{($product.regular_price - $product.price)|round:0}
+                        -{($product.regular_price - $product.price)|round:0 $product.unit_price_full} 
 
                     {/if}
                 </div>
