@@ -42,7 +42,9 @@
                     {if $product.discount_type === 'percentage' && $product.discount_percentage_absolute !== '' }
                         -{$product.discount_percentage_absolute}
                     {elseif $product.discount_type === 'amount' && $product.discount_to_display !== ''}
-                        -{$product.discount_to_display}
+                        
+                        -{($product.regular_price - $product.price)|round:0}
+
                     {/if}
                 </div>
             </i>
