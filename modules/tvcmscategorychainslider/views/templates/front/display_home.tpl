@@ -66,9 +66,9 @@
 
 
 
-			<div class="tvcategory-chain-slider-inner-info-box">
+			<div class="">
 
-				<div class='tvcategory-chain-slider-content-box'>
+				<div class=''>
 
 					{foreach $dis_arr_result['data'] as $data}
 
