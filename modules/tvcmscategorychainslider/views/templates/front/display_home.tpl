@@ -72,7 +72,7 @@
 
 					{foreach $dis_arr_result['data'] as $data}
 
-						<div class="item tvcategory-chain-slider-wrapper-info">
+						<div class="item tvcategory-chain-slider-wrapper-info col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
 							<div class="tvcategory-chain-slider-wrapper clearfix">
 
@@ -82,7 +82,7 @@
 
 
 
-									<div class="tvcategory-chin-img-block col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+									<div class="tvcategory-chin-img-block col-xl-12 col-lg-12 col-md-12 col-xs-12">
 
 										<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{$dis_arr_result['path']}{$data['image']}" alt="{$data['title']}" />
 
