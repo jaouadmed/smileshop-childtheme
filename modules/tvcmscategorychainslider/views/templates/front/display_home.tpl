@@ -72,7 +72,7 @@
 
 								<div class="tvcategory-chain-slider-info-wrapper">
 
-									<div class="tvcategory-chin-img-block col-xl-12 col-lg-12 col-md-12 col-xs-12">
+									<div class="tvcategory-chin-img-block col-xl-12 col-lg-12 col-md-12 col-xs-12"  style="text-align: center;">
 
 										<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{$dis_arr_result['path']}{$data['image']}" alt="{$data['title']}" />
 
@@ -90,7 +90,7 @@
 
 
 
-									<div class="tvcategory-chain-content-wrapper col-xl-12 col-lg-12 col-md-12 col-xs-12" style="text-align: center;">
+									<div class="tvcategory-chain-content-wrapper col-xl-12 col-lg-12 col-md-12 col-xs-12">
 
 										<div class="tvcategory-chain-content-inner">
 
