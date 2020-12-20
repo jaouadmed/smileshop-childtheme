@@ -90,7 +90,7 @@
 
 
 
-									<div class="tvcategory-chain-content-wrapper col-xl-12 col-lg-12 col-md-12 col-xs-12">
+									<div class="tvcategory-chain-content-wrapper col-xl-12 col-lg-12 col-md-12 col-xs-12" style="text-align: center;">
 
 										<div class="tvcategory-chain-content-inner">
 
