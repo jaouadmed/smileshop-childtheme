@@ -56,31 +56,21 @@
 
 		<div class='tvcategory-chain-slider container'>
 
-
-
             <div class='tvcategory-chain-slider-main-title-wrapper'>
 
 				{include file='_partials/tvcms-main-title.tpl' main_heading=$main_heading path=$dis_arr_result['path']}
 
             </div>
 
-
-
 			<div class="">
-
-				<div class=''>
 
 					{foreach $dis_arr_result['data'] as $data}
 
-						<div class="item tvcategory-chain-slider-wrapper-info col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
 							<div class="tvcategory-chain-slider-wrapper clearfix">
 
-
-
 								<div class="tvcategory-chain-slider-info-wrapper">
-
-
 
 									<div class="tvcategory-chin-img-block col-xl-12 col-lg-12 col-md-12 col-xs-12">
 
