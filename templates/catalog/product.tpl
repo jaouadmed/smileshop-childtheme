@@ -86,7 +86,7 @@
         </div>
     </div>
     <script>
-        $(window).load(function() {
+        window.addEventListener("load", function(event) {
             $('.tvlike-pagination-wrapper.tv-pagination-wrapper').detach().prependTo('.tvlike-product-wrapper-box.container .tvcmsmain-title-wrapper');
         });
     </script>
