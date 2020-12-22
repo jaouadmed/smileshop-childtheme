@@ -66,7 +66,7 @@
 
 					{foreach $dis_arr_result['data'] as $data}
 
-						<div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" style="padding: 0 .25em .5em .25em">
+						<div class="item col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 0 .25em .5em .25em">
 
 							<div class="tvcategory-chain-slider-wrapper clearfix">
 
