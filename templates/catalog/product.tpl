@@ -75,6 +75,7 @@
                     <div class="tvcmslike-next tvcmsnext-btn" data-parent="tvcmslike-product"><i class='material-icons'>&#xe315;</i></div>
                 </div>
             </div>
+
         </div>
         <div class="tvlike-product">
             <div class="products owl-theme owl-carousel tvlike-product-wrapper tvproduct-wrapper-content-box">
@@ -84,6 +85,10 @@
             </div>
         </div>
     </div>
+    <script>
+        $('.tvlike-pagination-wrapper.tv-pagination-wrapper').detach().prependTo('.tvlike-product-wrapper-box.container .tvcmsmain-title-wrapper');
+    </script>
+     
 </div>
 {/if}
 {/block}
