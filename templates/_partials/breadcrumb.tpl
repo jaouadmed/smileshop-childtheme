@@ -102,6 +102,13 @@
         <span itemprop="name">{l s='New Products' d='Shop.Theme.Action'}</span>
     </a>
     <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
+</li>
+{else}
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a itemprop="item" href="{$path.url}">
+        <span itemprop="name">{$page.page_name}</span>
+    </a>
+    <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
 </li>       
 {/if}
 {/block}
