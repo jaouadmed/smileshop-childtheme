@@ -90,61 +90,7 @@
 
 
 
-									{* <div class="tvcategory-chain-content-wrapper col-xl-12 col-lg-12 col-md-12 col-xs-12">
-
-										<div class="tvcategory-chain-content-inner">
-
-											
-
-
-
-											{if !empty($data.child_category)}
-
-												{$count = 1}
-
-												{$open_div = 'true'}
-
-												<div class="tvcategory-chain-slider-category-inner">
-
-													{foreach $data.child_category as $cat_info}
-
-														{if $count <= 8}
-
-															<div class="tvcategory-chain-slider-category">
-
-																<a href="{$link->getCategoryLink($cat_info['id_category'])}" title="{$cat_info['name']}">
-
-																	{$cat_info['name']}
-
-																</a>
-
-															</div>
-
-															{$count = $count + 1}
-
-														{/if}
-
-													{/foreach}
-
-												</div>{* 
-
-												<span class="tvcategory-chain-slider-all-link">
-
-												<a href="{$link->getCategoryLink($data['id_category'])}" title="{$data['title']}">
-
-													{l s='Show All' mod='tvcmscategorychainslider'}
-
-													<i class='material-icons'>&#xe5c8;</i>
-
-												</a>
-
-												</span> 
-
-												*}{/if}
-
-										</div>
-
-									</div> *}
+									
 
 								</div>
 
