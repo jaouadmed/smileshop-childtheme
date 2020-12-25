@@ -74,8 +74,10 @@
 
 									<div class="tvcategory-chin-img-block col-xl-12 col-lg-12 col-md-12 col-xs-12"  style="text-align: center;">
 
-										<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{$dis_arr_result['path']}{$data['image']}" alt="{$data['title']}" />
-
+										<a href="{$link->getCategoryLink($data['id_category'])}" title="{$data['title']}">
+											<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="{$dis_arr_result['path']}{$data['image']}" alt="{$data['title']}" />
+										</a>
+										
 										<div class='tvcategory-chain-title'>
 
 											<a href="{$link->getCategoryLink($data['id_category'])}" title="{$data['title']}">
