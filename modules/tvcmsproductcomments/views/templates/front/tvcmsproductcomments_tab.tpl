@@ -48,9 +48,9 @@
 
 {strip}
 
-<li class="nav-item">
+<li class="nav-item active">
 
-  	<a class="nav-link active" data-toggle="tab" href="#tvcmsproductCommentsBlock" role="tab" aria-controls="tvcmsproductCommentsBlock">{l s='Reviews' mod='tvcmsproductcomments'}</a>
+  	<a class="nav-link" data-toggle="tab" href="#tvcmsproductCommentsBlock" role="tab" aria-controls="tvcmsproductCommentsBlock">{l s='Reviews' mod='tvcmsproductcomments'}</a>
 
 </li>
 
