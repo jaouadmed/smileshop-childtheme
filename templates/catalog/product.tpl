@@ -7,7 +7,7 @@
         <li class="nav-item">
             <a class="nav-link{if $product.description} active{/if}" data-toggle="tab" href="#description" role="tab" aria-controls="description" {if $product.description} aria-selected="true" {/if}> {l s='Description' d='Shop.Theme.Catalog' } </a> 
         </li> 
-        {/if} 
+        {/if}
         
         {foreach from=$product.extraContent item=extra key=extraKey}
         <li class="nav-item">
@@ -16,9 +16,7 @@
             </a>
         </li>
         {/foreach}
-        {* start product comment tab hook *}
-        {hook h='displayProductListReviewsTab'}
-        {* End product comment tab hook *}
+        
     </ul>
     <div class="tab-content" id="tab-content">
         <div class="tab-pane fade in {if $product.description} active {/if}" id="description" role="tabpanel">
@@ -52,11 +50,20 @@
             {$extra.content nofilter}
         </div>
         {/foreach}
+        
+    </div>
+</div>
+<div class="tabs tvproduct-description-tab">
+    <ul class="nav nav-tabs" role="tablist">
+        {* start product comment tab hook *}
+        {hook h='displayProductListReviewsTab'}
+        {* End product comment tab hook *}
+    </ul>
+    <div class="tab-content" id="tab-content">
         {* start product comment tab content hook *}
         {hook h='displayProductListReviewsTabContent' product=$product}
         {* End product comment tab content hook *}
     </div>
-</div>
 {/block}
 
 {block name='product_accessories'}
