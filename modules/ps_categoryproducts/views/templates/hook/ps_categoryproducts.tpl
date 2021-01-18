@@ -47,7 +47,7 @@
 					<div class="tvsame-category-product">
 						<div class="products owl-theme owl-carousel tvsame-category-product-wrapper tvproduct-wrapper-content-box">
 							{foreach $products as $product}
-								{include file="catalog/_partials/miniatures/product-grid-view.tpl" product=$product tv_product_type="same_category_product"}
+								{include file="catalog/_partials/miniatures/product.tpl" product=$product tv_product_type="same_category_product"}
 							{/foreach}
 						</div>
 					</div>
