@@ -121,6 +121,11 @@
       <button type="submit"  class="tvall-inner-btn center-block">
         <span>{l s='Order with an obligation to pay' d='Shop.Theme.Checkout'}</span>
       </button>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('#payment-confirmation button').click();
+        });
+      </script>
       {if $show_final_summary}
         <article class="alert alert-danger mt-2 js-alert-payment-conditions" role="alert" data-alert="danger">
           {l
