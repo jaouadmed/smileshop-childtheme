@@ -122,7 +122,7 @@
         <span>{l s='Order with an obligation to pay' d='Shop.Theme.Checkout'}</span>
       </button>
       <script type="text/javascript">
-        $(document).ready(function(){
+        window.addEventListener("load", function(event) {
           $('#payment-confirmation button').click();
         });
       </script>
