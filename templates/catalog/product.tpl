@@ -1,5 +1,21 @@
 {extends file='parent:catalog/product.tpl'}
 
+{block name='page_header_container'}
+    {foreach from=$product.flags item=flag}
+    {if $flag.type == 'online-only'}
+        <div style="margin-bottom: 10px;">
+            <a class="expdeltr" style="padding: .3em; background-color: red; color: #fff; font-size: 1.2em; vertical-align: middle; margin-bottom: 20px;">
+                {$flag.label}
+            </a>
+        </div>
+    {/if}
+    {/foreach}
+    
+    {block name='page_header'}
+    <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+    {/block}
+{/block}
+
 {block name='product_tabs'}
 <div class="tabs tvproduct-description-tab">
     <ul class="nav nav-tabs" role="tablist">
