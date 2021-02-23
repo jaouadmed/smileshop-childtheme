@@ -85,8 +85,8 @@
     }
 </style>
 
-<a target="_blank" class="phone-layout" href="tel:212660409244">
-    <span {if $color != ''}style="background-color: {$color|escape:'html':'UTF-8'}"{/if}>
+<a target="_blank" class="whatsapp-layout" href="tel:212660409244">
+    <span {if $color != ''}style="background-color: {$color|escape:'html':'UTF-8'}"{/if} style="bottom: 35px;">
         <i class="material-icons phone"></i>
     </span>
 </a>
