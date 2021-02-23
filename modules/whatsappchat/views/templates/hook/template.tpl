@@ -120,6 +120,7 @@
             <i class="material-icons phone"></i>
         </span>
     </a>
+    
     <a class="whatsappchat-anchor {$whatsapp_theme|escape:'html':'UTF-8'} whatsappchat-anchor{$whatsappchat_id|escape:'html':'UTF-8'}" target="_blank" {if $agents !== false && $from_bo != '1' && version_compare($smarty.const._PS_VERSION_,'1.5','>=')}href="javascript:void(0);" rel="nofollow noopener noreferrer" {else}href="{$url|escape:'html':'UTF-8'}" rel="noopener noreferrer"{/if}>{/if}
         <div class="whatsapp whatsapp_{$whatsappchat_id|escape:'html':'UTF-8'} whatsapp-{if isset($from_bo) && $from_bo != '1'}{$whatsapp_class|escape:'html':'UTF-8'} {$position|escape:'html':'UTF-8'}{/if}{if $offline_message != '' && ($whatsapp_class == 'topWidth' || $whatsapp_class == 'bottomWidth')} whatsapp-offline{/if}"
             {if $color != '' && ($whatsapp_class == 'topWidth' || $whatsapp_class == 'bottomWidth') && $from_bo != '1'}style="background-color: {$color|escape:'html':'UTF-8'}"{/if}>
