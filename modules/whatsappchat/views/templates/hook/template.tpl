@@ -113,7 +113,7 @@
     </div>
 {/if}
 {if $whatsapp_class != 'floating'}
-    <a target="_blank" class="whatsapp-layout" href="tel:212660409244">
+    <a target="_blank" class="whatsappchat-anchor whatsapp-layout" href="tel:212660409244">
         <span {if $color != ''}style="background-color: {$color|escape:'html':'UTF-8'}; bottom: 35px;"{/if} >
             <i class="material-icons phone"></i>
         </span>
