@@ -114,7 +114,7 @@
 {/if}
 {if $whatsapp_class != 'floating'}
 
-    <a class="whatsappchat-anchor {$whatsapp_theme|escape:'html':'UTF-8'} whatsappchat-anchor{$whatsappchat_id|escape:'html':'UTF-8'}" target="_blank" {if $agents !== false && $from_bo != '1' && version_compare($smarty.const._PS_VERSION_,'1.5','>=')}href="javascript:void(0);" rel="nofollow noopener noreferrer" {else}href="tel:212660409244" rel="noopener noreferrer"{/if}>{/if}
+    <a class="whatsappchat-anchor {$whatsapp_theme|escape:'html':'UTF-8'} whatsappchat-anchor{$whatsappchat_id|escape:'html':'UTF-8'}" target="_blank" {if $agents !== false && $from_bo != '1' && version_compare($smarty.const._PS_VERSION_,'1.5','>=')}href="javascript:void(0);" rel="nofollow noopener noreferrer" {else}href="tel:212660409244" rel="noopener noreferrer"{/if}>
         <div class="whatsapp whatsapp_{$whatsappchat_id|escape:'html':'UTF-8'} whatsapp-{if isset($from_bo) && $from_bo != '1'}{$whatsapp_class|escape:'html':'UTF-8'} {$position|escape:'html':'UTF-8'}{/if}{if $offline_message != '' && ($whatsapp_class == 'topWidth' || $whatsapp_class == 'bottomWidth')} whatsapp-offline{/if}"
             {if $color != '' && ($whatsapp_class == 'topWidth' || $whatsapp_class == 'bottomWidth') && $from_bo != '1'}style="background-color: {$color|escape:'html':'UTF-8'}"{/if}>
             <span {if $color != ''}style="background-color: {$color|escape:'html':'UTF-8'}; bottom:35px;"{/if}{if $offline_message != ''} class="whatsapp-offline"{/if}{if $agents !== false && $from_bo != '1'} id="whatsappchat-agents{$whatsappchat_id|escape:'html':'UTF-8'}{if ($whatsapp_action === 'quickview' || $whatsapp_action === 1)}quickview{/if}"{/if}>
