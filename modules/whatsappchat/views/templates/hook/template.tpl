@@ -21,6 +21,8 @@
 {if ($custom_js != '' && $from_bo != '1')}
 <script>
     {$custom_js nofilter}
+    
+    console.log("ok");
 </script>
 {/if}
 {if ($custom_css != '' && $from_bo != '1')}
@@ -112,7 +114,6 @@
         </div>
     </div>
 {/if}
-<a class="whatsappchat-anchor {$whatsapp_theme|escape:'html':'UTF-8'} whatsappchat-anchor{$whatsappchat_id|escape:'html':'UTF-8'}" href="tel:212660409244"></a>
 {if $whatsapp_class != 'floating'}
     {if $open_chat && $from_bo != '1' && $offline_link != ''}<a class="whatsappchat-anchor {$whatsapp_theme|escape:'html':'UTF-8'} whatsappchat-anchor{$whatsappchat_id|escape:'html':'UTF-8'}" href="{$offline_link|escape:'html':'UTF-8'}">{/if}
     {if $open_chat && $from_bo != '1' && $offline_message == ''}<a class="whatsappchat-anchor {$whatsapp_theme|escape:'html':'UTF-8'} whatsappchat-anchor{$whatsappchat_id|escape:'html':'UTF-8'}" target="_blank" {if $agents !== false && $from_bo != '1' && version_compare($smarty.const._PS_VERSION_,'1.5','>=')}href="javascript:void(0);" rel="nofollow noopener noreferrer" {else}href="{$url|escape:'html':'UTF-8'}" rel="noopener noreferrer"{/if}>{/if}
