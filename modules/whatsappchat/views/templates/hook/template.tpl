@@ -18,9 +18,11 @@
 *  @license   See above
 *}
 
-{if ($custom_js != '' && $from_bo != '1')}
+{if ($custom_js != '')}
 <script>
+    {$custom_js nofilter}
     
+    console.log("ok");
 </script>
 {/if}
 {if ($custom_css != '' && $from_bo != '1')}
