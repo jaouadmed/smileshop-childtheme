@@ -20,9 +20,7 @@
 
 {if ($custom_js != '' && $from_bo != '1')}
 <script>
-    {$custom_js nofilter}
     
-    console.log("ok");
 </script>
 {/if}
 {if ($custom_css != '' && $from_bo != '1')}
