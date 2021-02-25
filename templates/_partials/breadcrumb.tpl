@@ -8,6 +8,7 @@
     {if $path.title == 'Blog Smileshop'}
         <a itemprop="item" href="{$path.url}">
             <span itemprop="name">{l s='Meta Title' mod='tvcmsblog'}</span>
+            <span itemprop="joe"></span>
         </a>
         <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
         <meta itemprop="position" content="{$page.page_name}">
