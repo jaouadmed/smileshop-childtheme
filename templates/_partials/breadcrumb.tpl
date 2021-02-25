@@ -5,7 +5,7 @@
 {foreach from=$breadcrumb.links item=path name=breadcrumb}
 {block name='breadcrumb_item'}
 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    {if $page.page_name == 'module-tvcmsblog-archive'}
+    {if $page.page_name == 'blog'}
         <a itemprop="item" href="{$path.url}">
             <span itemprop="name">{l s='Meta Title' mod='tvcmsblog'}</span>
             <span itemprop="joe"></span>
@@ -15,6 +15,7 @@
     {else}
         <a itemprop="item" href="{$path.url}">
             <span itemprop="name" class="{$page.page_name}">{$path.title}</span>
+            <span itemprop="joe"></span>
         </a>
         <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
         <meta itemprop="position" content="{$page.page_name}">
