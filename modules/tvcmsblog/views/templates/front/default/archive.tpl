@@ -58,7 +58,11 @@
 
         <div class="tvall-page-top-title">
 
-            <h1 class="tvpage-header-title">{$meta_title}</h1>
+            {if $meta_title == 'Blog Smileshop'}
+                <h1 class="tvpage-header-title">{l s='Blog' d='Shop.Theme.Global'}</h1>
+            {else}
+                <h1 class="tvpage-header-title">{$meta_title}</h1>
+            {/if}
 
         </div>
 
