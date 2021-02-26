@@ -7,6 +7,7 @@
 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
     <a itemprop="item" href="{$path.url}">
         <span itemprop="name">{$path.title}</span>
+        <span class="joe"></span>
     </a>
     <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
 </li>
