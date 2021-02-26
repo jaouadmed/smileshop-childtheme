@@ -264,10 +264,10 @@
 
                     {foreach from=$breadcrumb.links item=path name=breadcrumb}
 
-                        {if $page.page_name == 'module-tvcmsblog-archive'}
+                        {if $path.title == 'Blog Smileshop'}
                             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                                 <a itemprop="item" href="{$path.url}">
-                                    <span itemprop="name">{l s='ThemeVolty - Blog' mod='tvcmsblog'}</span>
+                                    <span itemprop="name">{l s='Blog Smileshop' mod='tvcmsblog'}</span>
                                     <span class="{$page.page_name}"></span>
                                 <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
                             </li>
@@ -278,7 +278,7 @@
 
                                     <span itemprop="name">{$path.title}</span>
                                     <span class="{$page.page_name}"></span>
-
+                                    
                                 </a>
 
                                 <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
