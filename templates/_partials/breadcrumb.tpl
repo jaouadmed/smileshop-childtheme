@@ -5,19 +5,10 @@
 {foreach from=$breadcrumb.links item=path name=breadcrumb}
 {block name='breadcrumb_item'}
 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    {if $path.title == 'Blog Smileshop'}
-        <a itemprop="item" href="{$path.url}">
-            <span itemprop="name">{l s='Meta Title' mod='tvcmsblog'}</span>
-        </a>
-        <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
-        <meta itemprop="position" content="{$page.page_name}">
-    {else}
-        <a itemprop="item" href="{$path.url}">
-            <span itemprop="name" class="{$page.page_name}">{$path.title}</span>
-        </a>
-        <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
-        <meta itemprop="position" content="{$page.page_name}">
-    {/if}
+    <a itemprop="item" href="{$path.url}">
+        <span itemprop="name">{$path.title}</span>
+    </a>
+    <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
 </li>
 {/block}
 {/foreach}
@@ -109,8 +100,9 @@
 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
     <a itemprop="item" href="{$path.url}">
         <span itemprop="name">{l s='New Products' d='Shop.Theme.Action'}</span>
+        <span class="joe"></span>
     </a>
     <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
-</li>       
+</li>
 {/if}
 {/block}
