@@ -267,7 +267,7 @@
                         {if $path.title == 'Blog Smileshop'}
                             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                                 <a itemprop="item" href="{$path.url}">
-                                    <span itemprop="name">{l s='Blog Smileshop' mod='tvcmsblog'}</span>
+                                    <span itemprop="name">{l s='Blog' mod='Shop.Theme.Global'}</span>
                                     <span class="{$page.page_name}"></span>
                                 <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
                             </li>
