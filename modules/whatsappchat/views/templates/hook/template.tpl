@@ -117,7 +117,7 @@
 {if $whatsapp_class != 'floating'}
     <a class="whatsappchat-anchor {$whatsapp_theme|escape:'html':'UTF-8'} whatsappchat-anchor{$whatsappchat_id|escape:'html':'UTF-8'}01" href="tel:212660409244" rel="nofollow noopener noreferrer">
         <div class="whatsapp whatsapp-badge {$position|escape:'html':'UTF-8'}" style=" bottom: 35px; z-index: 1;">
-            <span {if $color != ''}style="background-color: {$color|escape:'html':'UTF-8'}"{/if}{if $offline_message != ''} class="whatsapp-offline"{/if}{if $agents !== false && $from_bo != '1'} id="whatsappchat-agents{$whatsappchat_id|escape:'html':'UTF-8'}{if ($whatsapp_action === 'quickview' || $whatsapp_action === 1)}quickview{/if}"{/if}>
+            <span style="background-color: #ffd741;border-radius: 1.5em;" {if $offline_message != ''} class="whatsapp-offline"{/if}{if $agents !== false && $from_bo != '1'} id="whatsappchat-agents{$whatsappchat_id|escape:'html':'UTF-8'}{if ($whatsapp_action === 'quickview' || $whatsapp_action === 1)}quickview{/if}"{/if}>
                 <i class="material-icons" {if $button_text == ''}style="padding-right:0px!important;"{/if}>phone</i>
             </span>
         </div>
