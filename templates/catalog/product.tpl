@@ -201,11 +201,11 @@
                             </div>
                             {if $product.has_discount}
                                 {if $product.discount_type === 'percentage'}
-                                <span class="discount discount-percentage" style="padding: 5px 6px;margin: 0 0 0 10px;background-color: #000;color: #fff;">
+                                <span class="discount discount-percentage" style="padding: 3px;background-color: #000;color: #fff;">
                                     {l s='Save %percentage%' d='Shop.Theme.Catalog' sprintf=['%percentage%' => $product.discount_percentage_absolute]}
                                 </span>
                                 {else}
-                                <span class="discount discount-amount" style="padding: 5px 6px;margin: 0 0 0 10px;background-color: #000;color: #fff;">
+                                <span class="discount discount-amount" style="padding: 3px;background-color: #000;color: #fff;">
                                     {l s='Save %amount%' d='Shop.Theme.Catalog' sprintf=['%amount%' => $product.discount_to_display]}
                                 </span>
                                 {/if}
