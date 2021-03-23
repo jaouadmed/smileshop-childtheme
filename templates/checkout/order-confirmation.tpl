@@ -6,9 +6,7 @@
       <div class="card-block">
         <div class="row">
           <div class="col-md-12">
-            <h3 class="h1 card-title">
-              {$order::getCurrentState()}
-            </h3>
+            
             
 
 
