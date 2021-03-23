@@ -8,7 +8,7 @@
           <div class="col-md-12">
             
             <h3 class="h1 card-title">
-              {$order.getCurrentState()}
+              {$order->getCurrentState()}
             </h3>
 
 
