@@ -8,7 +8,7 @@
           <div class="col-md-12">
             
             <h3 class="h1 card-title">
-              {$order->GETDELIVERYINFORMATION}
+              {$order.history.current|@print_r}
             </h3>
 
 
