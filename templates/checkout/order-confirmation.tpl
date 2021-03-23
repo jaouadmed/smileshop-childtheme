@@ -6,11 +6,6 @@
       <div class="card-block">
         <div class="row">
           <div class="col-md-12">
-            
-            <h3 class="h1 card-title">
-              {$order.history.current|@print_r}
-            </h3>
-
 
             {block name='order_confirmation_header'}
               <h3 class="h1 card-title">
