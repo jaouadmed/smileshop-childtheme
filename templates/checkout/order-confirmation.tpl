@@ -12,7 +12,7 @@
                 {if !Configuration::get('BPI_ID_ORDERSTATE')}
                   <i class="material-icons rtl-no-flip done">&#xE876;</i>{l s='Your order is confirmed' d='Shop.Theme.Checkout'}
                 {else}
-                  {$order.history.current['ID_ORDER_STATE']|@var_dump}
+                  {$order.history.current.id_order_state|@var_dump}
                   {Configuration::get('BPI_ID_ORDERSTATE')|@var_dump}
 
                 {/if}
