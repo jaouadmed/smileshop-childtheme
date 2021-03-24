@@ -10,7 +10,7 @@
               
               {block name='order_confirmation_header'}
                 <h3 class="h1 card-title">
-                  <i class="material-icons rtl-no-flip close" style="color: #e40046;font-size: 1.7em;display: inline-block;padding: 0 .8125rem;margin-right: 1.563rem;">close</i>{l s='The payment could not be processed. You should have received more informations on the previous page' mod='cmi'}
+                  <i class="material-icons rtl-no-flip" style="color: #e40046;font-size: 1.7em;display: inline-block;padding: 0 .8125rem;margin-right: 1.563rem;">close</i>{l s='The payment could not be processed. You should have received more informations on the previous page' mod='cmi'}
                 </h3>
               {/block}
               <p>
