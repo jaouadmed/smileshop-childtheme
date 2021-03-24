@@ -7,18 +7,16 @@
         <div class="row">
           <div class="col-md-12">
 
+            
+
             {block name='order_confirmation_header'}
               <h3 class="h1 card-title">
-                {if !Configuration::get('BPI_ID_ORDERSTATE')}
-                  <i class="material-icons rtl-no-flip done">&#xE876;</i>{l s='Your order is confirmed' d='Shop.Theme.Checkout'}
+                {if $order.history.current.id_order_state == Configuration::get('BPI_ID_ORDERSTATE')}
                 {else}
-                  {$order.history.current.id_order_state|@var_dump}
-                  {Configuration::get('BPI_ID_ORDERSTATE')|@var_dump}
-
+                  <i class="material-icons rtl-no-flip done">&#xE876;</i>{l s='Your order is confirmed' d='Shop.Theme.Checkout'}
                 {/if}
               </h3>
             {/block}
-
             
 
             <p>
