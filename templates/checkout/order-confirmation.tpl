@@ -9,10 +9,10 @@
 
             {block name='order_confirmation_header'}
               <h3 class="h1 card-title">
-                {if $order.history.current.ID_ORDER_STATE }
-                  <i class="material-icons rtl-no-flip close"></i>{l s='Your payment hasn't been confirmed' d='Shop.Theme.Checkout'}
-                {else}
+                {if !Configuration::get('BPI_ID_ORDERSTATE')}
                   <i class="material-icons rtl-no-flip done">&#xE876;</i>{l s='Your order is confirmed' d='Shop.Theme.Checkout'}
+                {else}
+                  {$order.history.current.ID_ORDER_STATE|@var_dump}
                 {/if}
               </h3>
             {/block}
