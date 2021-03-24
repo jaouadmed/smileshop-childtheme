@@ -6,35 +6,39 @@
       <div class="card-block">
         <div class="row">
           <div class="col-md-12">
-
+            {if $order.history.current.id_order_state == Configuration::get('BPI_ID_ORDERSTATE')}
+              
+              {block name='order_confirmation_header'}
+                <h3 class="h1 card-title">
+                  <i class="material-icons rtl-no-flip close" style="color: #e40046;font-size: 1.7em;display: inline-block;padding: 0 .8125rem;margin-right: 1.563rem;">close</i>{l s='The payment could not be processed. You should have received more informations on the previous page' mod='cmi'}
+                </h3>
+              {/block}
+              <p>
+                {l s='Please, try to order again.' mod='cmi'}
+              </p>
             
-
-            {block name='order_confirmation_header'}
-              <h3 class="h1 card-title">
-                {if $order.history.current.id_order_state == Configuration::get('BPI_ID_ORDERSTATE')}
-                  <i class="material-icons rtl-no-flip close">close</i>{l s='The payment could not be processed. You should have received more informations on the previous page' mod='cmi'}
-                {else}
-                  <i class="material-icons rtl-no-flip done">&#xE876;</i>{l s='Your order is confirmed' d='Shop.Theme.Checkout'}
+            {else}
+              
+              {block name='order_confirmation_header'}
+                <h3 class="h1 card-title">
+                    <i class="material-icons rtl-no-flip done">&#xE876;</i>{l s='Your order is confirmed' d='Shop.Theme.Checkout'}
+                </h3>
+              {/block}
+              <p>
+                {l s='An email has been sent to your mail address %email%.' d='Shop.Theme.Checkout' sprintf=['%email%' => $customer.email]}
+                {if $order.details.invoice_url}
+                  {* [1][/1] is for a HTML tag. *}
+                  {l
+                    s='You can also [1]download your invoice[/1]'
+                    d='Shop.Theme.Checkout'
+                    sprintf=[
+                      '[1]' => "<a href='{$order.details.invoice_url}'>",
+                      '[/1]' => "</a>"
+                    ]
+                  }
                 {/if}
-              </h3>
-            {/block}
-            
-
-            <p>
-              {l s='An email has been sent to your mail address %email%.' d='Shop.Theme.Checkout' sprintf=['%email%' => $customer.email]}
-              {if $order.details.invoice_url}
-                {* [1][/1] is for a HTML tag. *}
-                {l
-                  s='You can also [1]download your invoice[/1]'
-                  d='Shop.Theme.Checkout'
-                  sprintf=[
-                    '[1]' => "<a href='{$order.details.invoice_url}'>",
-                    '[/1]' => "</a>"
-                  ]
-                }
-              {/if}
-            </p>
-
+              </p>
+            {/if}
             {block name='hook_order_confirmation'}
               {$HOOK_ORDER_CONFIRMATION nofilter}
             {/block}
